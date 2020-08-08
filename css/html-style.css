@@ -31,11 +31,6 @@ h2 {
     color: #454445;
 }
 
-.col {
-    padding-left: 0em;
-    margin-top: 0.3em;
-}
-
 h3 {
     margin: 0.3em;
     padding-top: 0.3em;
@@ -43,6 +38,16 @@ h3 {
     font-size: 1em;
     color: #454445;
     text-align: center;
+}
+
+.app-description {
+    text-align: left;
+}
+
+ol,
+ul {
+    padding: 0;
+    list-style: none;
 }
 
 p {
@@ -83,6 +88,51 @@ a:hover {
     margin-right: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.flex-item-3 {
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/*********************************************************************************/
+
+
+/* Profile                                                                       */
+
+
+/*********************************************************************************/
+
+#profile {
+    height: 12em;
+    width: 12em;
+    background-repeat: no-repeat;
+    background-color: white;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#name {
+    margin-bottom: 10px;
+    font-size: 20pt;
+}
+
+#list {
+    font-size: 13pt;
+}
+
+.col {
+    text-align: center;
+    padding-left: 0em;
+    margin-top: 0.3em;
+}
+
+#social {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 15px;
 }
 
 
@@ -310,7 +360,7 @@ a:hover {
 /*********************************************************************************/
 
 
-/* Banner                                                                       */
+/* Front Picture                                                                       */
 
 
 /*********************************************************************************/
