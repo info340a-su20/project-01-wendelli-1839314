@@ -9,7 +9,6 @@
     <link rel="icon" type="image/png" href="css/images/icons/app-icon.jpg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="css/html-style.css" rel="stylesheet" type="text/css" media="all" />
-
 </head>
 
 <body>
@@ -20,7 +19,7 @@
             </div>
             <div id="menu">
                 <ul>
-                    <li class="current_page_item"><a href="index.html">Calculator</a></li>
+                    <li class="current_page_item"><a href="index-housekeeping.html">Calculator</a></li>
                     <li><a href="about.html">About Us</a></li>
                 </ul>
             </div>
@@ -28,7 +27,7 @@
     </div>
 
     <div id="wrapper">
-        <div class="flex-container">
+        <div class="flex-container" id="pg1">
             <div class="row">
                 <div class="col">
                     <section class="flex-item-1">
@@ -40,34 +39,40 @@
                         <p class="app-description">
                             COVID-19 is detrimental to everyone’s health, but its severity is often overlooked by a large number of people in the United States. Our web application is primarily designed to let you calculate your own risk of getting COVID-19. We include a list of
                             daily activities, such as shopping, exercising, or dining out, in "Activity Center". To start off, please click the activities you've completed in a day to add to the "My Activities" box. You will then be asked to input some
-                            details related to each of the selected activities to help us generate a more precise result. We base our formula on <a target="_blank" href="https://abc7news.com/covid-19-activity-risk-chart-calculator-for-assessment/6305373/">Texas Medical Association</a>                            to calculate your risk of infections.
+                            details related to each of the selected activities to help us generate a more precise result. We base our formula on <a target="_blank" href="https://www.texmed.org/TexasMedicineDetail.aspx?id=53977">Texas Medical Association</a>                            to calculate your risk of infections.
                         </p>
                     </section>
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="flex-container">
+        <div class="flex-container" id="pg2">
+            <div class="row">
                 <div class="col">
                     <section class="flex2-item-1">
                         <h2>Activity Center</h2>
                         <p>Click the activity cards to add them to "My Activities".</p>
+                        <form class="form-inline">
+                            <input class="searchbox" type="text" placeholder="  Search" aria-label="Search">
+                            <button class="btn btn-rounded btn-sm" type="submit"><i><img src="css/images/icons/search.png" alt="search" class="search-icon"></i></button>
+                        </form>
                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-default active">
 							<input type="radio" name="options" id="option1" autocomplete="off" checked> Housekeeping
 						</label>
                             <label class="btn btn-default">
-							<input type="radio" name="options" id="option2" autocomplete="off"> Job
+                            <input type="radio" name="options" id="option2" autocomplete="off">
+                            <a class="categorylink" href="index-job.html">Job</a>
 						</label>
                             <label class="btn btn-default">
-							<input type="radio" name="options" id="option3" autocomplete="off"> Transportation
+                            <input type="radio" name="options" id="option3" autocomplete="off">
+                            <a class="categorylink" href="index-transportation.html">Transportation</a>
 						</label>
                             <label class="btn btn-default">
-							<input type="radio" name="options" id="option3" autocomplete="off"> Entertainment
+							<input type="radio" name="options" id="option3" autocomplete="off"><a class="categorylink" href="index-entertainment.html">Entertainment</a>
 						</label>
                             <label class="btn btn-default">
-							<input type="radio" name="options" id="option3" autocomplete="off"> Miscellaneous
+							<input type="radio" name="options" id="option3" autocomplete="off"><a class="categorylink" href="index-miscellaneous.html">Miscellaneous</a>
 						</label>
                         </div>
 
@@ -76,7 +81,6 @@
                                 <div class="row">
                                     <div class="col-6">
                                         <section class="flex2-item-1-1">
-                                            <!-- Housekeeping -->
                                             <div class="flex-activity-item point-1">
                                                 <div class="row">
                                                     <div class="col-1 icon">
@@ -186,52 +190,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Job -->
-                            <!-- Transportation -->
-                            <!-- <div class="flex-activity-item">
-								<div class="row">
-									<div class="col-1 icon">
-										<img src="css/images/icons/gasoline.png" alt="gasoline" id="icon"/>
-									</div>
-									<div class="col">
-										<h3>Pumping Gasoline</h3>
-									</div>
-								</div>
-							</div> -->
-                            <!-- Entertainment -->
-                            <!-- <div class="flex-activity-item">
-								<div class="row">
-									<div class="col-1 icon">
-										<img src="css/images/icons/gasoline.png" alt="gasoline" id="icon"/>
-									</div>
-									<div class="col">
-										<h3>Playing Tennis</h3>
-									</div>
-								</div>
-							</div> -->
-                            <!-- Entertainment -->
-                            <!-- <div class="flex-activity-item">
-								<div class="row">
-									<div class="col-1 icon">
-										<img src="css/images/icons/camping.png" alt="camping" id="icon"/>
-									</div>
-									<div class="col">
-										<h3>Camping</h3>
-									</div>
-								</div>
-							</div> -->
-                            <!-- Miscellaneous -->
-                            <!-- <div class="flex-activity-item">
-                                    <div class="row">
-                                        <div class="col-1 icon">
-                                            <img src="css/images/icons/barbershop.png" alt="barbershop" id="icon" />
-                                        </div>
-                                        <div class="col">
-                                            <h3>Barber Shop</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                     </section>
                 </div>
@@ -239,61 +197,95 @@
                 <div class="col">
                     <section class="flex3-item-1">
                         <h2>My Activities</h2>
-                        <p>Drop down your selected activities below.</p>
+                        <p>Tell us if you did/did not wear masks and the duration of each activity.</p>
                         <div class="dropzone">
                             <div class="list-container">
-                                <div class="flex-activity-item">
-                                    <div class="row act-row">
-                                        <div class="col-1 icon">
-                                            <img src="css/images/icons/mailbox.png" alt="mailbox" id="icon" />
-                                        </div>
-                                        <div class="col">
-                                            <h3>Check Mailbox</h3>
-                                        </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <section class="flex3-item1-1">
+                                            <div class="flex-my-activity-item">
+                                                <div class="row act-row">
+                                                    <div id="container">
+                                                        <div id="close">
+                                                            ×
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-1 icon">
+                                                        <img src="css/images/icons/mailbox.png" alt="mailbox" id="icon" />
+                                                    </div>
+                                                    <div class="col">
+                                                        <h3>Check Mailbox</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="row act-row">
+                                                    <div class="col">
+                                                        <h3></h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-my-activity-item">
+                                                <div class="row">
+                                                    <div id="container">
+                                                        <div id="close">
+                                                            ×
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-1 icon">
+                                                        <img src="css/images/icons/barbershop.png" alt="barbershop" id="icon" />
+                                                    </div>
+                                                    <div class="col">
+                                                        <h3>Barber Shop</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
                                     </div>
-                                </div>
-
-                                <div class="flex-activity-item">
-                                    <div class="row">
-                                        <div class="col-1 icon">
-                                            <img src="css/images/icons/shopping.png" alt="shopping" id="icon" />
-                                        </div>
-                                        <div class="col">
-                                            <h3>Grocery Shopping</h3>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="flex-activity-item">
-                                    <div class="row">
-                                        <div class="col-1 icon">
-                                            <img src="css/images/icons/restaurant.png" alt="restaturant" id="icon" />
-                                        </div>
-                                        <div class="col">
-                                            <h3>Dinner at Friend's</h3>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="flex-activity-item">
-                                    <div class="row">
-                                        <div class="col-1 icon">
-                                            <img src="css/images/icons/barbershop.png" alt="barbershop" id="icon" />
-                                        </div>
-                                        <div class="col">
-                                            <h3>Barber Shop</h3>
-                                        </div>
+                                    <div class="col-6">
+                                        <section class="flex3-item1-2">
+                                            <div class="flex-my-activity-item">
+                                                <div class="row">
+                                                    <div id="container">
+                                                        <div id="close">
+                                                            ×
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-1 icon">
+                                                        <img src="css/images/icons/shopping.png" alt="shopping" id="icon" />
+                                                    </div>
+                                                    <div class="col">
+                                                        <h3>Grocery Shopping</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <section class="flex3-item-2">
-                        <h2>Result</h2>
-                        <div class="result">
+                </div>
+            </div>
+        </div>
 
+        <div class="flex-container" id="pg3">
+            <div>
+                <h2>Result</h2>
+                <div class="row">
+                    <div class="result">
+                        <div class="col">
+                            <section class="flex4-item-1">
+                                <h3>Risk Level:</h3>
+                                <h3>Moderate High</h3>
+                            </section>
                         </div>
-                    </section>
+                        <div class="col">
+                            <section class="flex4-item-1">
+                                <p>
+                                    Your risk level is 'Moderate High'. We recommend you to take precautions while being outside. And void unnecessary activities if possible.
+                                </p>
+                            </section>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -301,7 +293,8 @@
 </body>
 <footer>
     <div id="copyright" class="container">
-        <p>&copy; 2020 Wendell Li, George Gu, Zexin Lyu</p>
+        <p>Results provided do not reflect actual risks. Some data references <a target="_blank" href="https://www.texmed.org/TexasMedicineDetail.aspx?id=53977">the study by Texas Medical Association</a>.</p>
+        <p>Copyright &copy; 2020 Wendell Li, George Gu, Zexin Lyu</p>
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
