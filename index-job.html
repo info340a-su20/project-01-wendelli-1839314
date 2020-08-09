@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Wendell Li, George Gu, Zexin Lyu" />
-    <meta name="description" content="This web application is primarily designed to let people calculate their own risks of getting COVID-19." />
+    <meta charset="UTF-8">
+    <meta name="author" content="Wendell Li, George Gu, Zexin Lyu">
+    <meta name="description" content="This web application is primarily designed to let people calculate their own risks of getting COVID-19.">
     <title>COVID-19 Risk Calculator</title>
-    <link rel="icon" type="image/png" href="css/images/icons/app-icon.jpg" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="icon" type="image/png" href="css/images/icons/app-icon.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="css/html-style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 
@@ -27,11 +27,11 @@
     </div>
 
     <div id="wrapper">
-        <div class="flex-container">
+        <div class="flex-container" id="pg1">
             <div class="row">
                 <div class="col">
                     <section class="flex-item-1">
-                        <img src="css/images/people.png" alt="people" id="people" />
+                        <img src="css/images/people.png" alt="people" id="people">
                     </section>
                 </div>
                 <div class="col">
@@ -39,17 +39,14 @@
                         <p class="app-description">
                             COVID-19 is detrimental to everyone’s health, but its severity is often overlooked by a large number of people in the United States. Our web application is primarily designed to let you calculate your own risk of getting COVID-19. We include a list of
                             daily activities, such as shopping, exercising, or dining out, in "Activity Center". To start off, please click the activities you've completed in a day to add to the "My Activities" box. You will then be asked to input some
-                            details related to each of the selected activities to help us generate a more precise result. We base our formula on
-                            <a class="articleLink" target="_blank" href="https://www.texmed.org/TexasMedicineDetail.aspx?id=53977">Texas Medical Association</a
-								>
-								to calculate your risk of infections.
-						</p>
-					</section>
-				</div>
-			</div>
+                            details related to each of the selected activities to help us generate a more precise result. We base our formula on <a target="_blank" href="https://www.texmed.org/TexasMedicineDetail.aspx?id=53977">Texas Medical Association</a>                            to calculate your risk of infections.
+                        </p>
+                    </section>
+                </div>
+            </div>
         </div>
 
-		<div class="flex-container">
+		<div class="flex-container" id="pg2">
             <div class="row">
 				<div class="col">
 					<section class="flex2-item-1">
@@ -86,7 +83,7 @@
                         <div class="row">
                             <div class="col-6">
                                 <section class="flex2-item-1-1">
-                                    <div class="flex-activity-item point-1">
+                                    <div class="flex-activity-item point-4">
                                         <div class="row">
                                             <div class="col-1 icon">
                                                 <img src="css/images/icons/meeting-room.png" alt="business meeting" id="icon" />
@@ -96,7 +93,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex-activity-item point-3">
+                                    <div class="flex-activity-item point-7">
                                         <div class="row">
                                             <div class="col-1 icon">
                                                 <img src="css/images/icons/cafeteria.png" alt="eat lunch at cafeteria" id="icon" />
@@ -116,7 +113,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex-activity-item point-2">
+                                    <div class="flex-activity-item point-0">
                                         <div class="row">
                                             <div class="col-1 icon">
                                                 <img src="css/images/icons/working.png" alt="working" id="icon" />
@@ -126,7 +123,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex-activity-item point-1">
+                                    <div class="flex-activity-item point-4">
                                         <div class="row">
                                             <div class="col-1 icon">
                                                 <img src="css/images/icons/coworking.png" alt="coworking" id="icon" />
@@ -141,7 +138,7 @@
 
                             <div class="col-6">
                                 <section class="flex2-item-1-2">
-                                    <div class="flex-activity-item point-0">
+                                    <div class="flex-activity-item point-5">
                                         <div class="row">
                                             <div class="col-1 icon">
                                                 <img src="css/images/icons/recovery.png" alt="recovery" id="icon" />
@@ -151,7 +148,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex-activity-item point-5">
+                                    <div class="flex-activity-item point-0">
                                         <div class="row">
                                             <div class="col-1 icon">
                                                 <img src="css/images/icons/video-conference.png" alt="video conference" id="icon" />
@@ -168,7 +165,6 @@
                 </div>
                 </section>
             </div>
-
 
             <div class="col">
                 <section class="flex3-item-1">
@@ -193,6 +189,25 @@
                                                     <h3>Check Mailbox</h3>
                                                 </div>
                                             </div>
+                                            <form>
+                                                <div id="card-radio-button">
+                                                    <label for="yes_no_radio">Wear Mask?</label>
+                                                    <input type="radio" value="mask-yes" name="yes_no">Yes</input>
+                                                    <input type="radio" value="mask-no" name="yes_no">No</input>
+                                                </div>
+                                            </form>
+                                            <div id="card-select-box">
+                                                <label for="select_box">Duration?</label>
+                                                <select name="duration" id="duration">
+                                                    <option value="0-1h">0-1 hour</option>
+                                                    <option value="1-2h">1-2 hours</option>
+                                                    <option value="2-3h">2-3 hours</option>
+                                                    <option value="3-4h">3-4 hours</option>
+                                                    <option value="4-5h">4-5 hours</option>
+                                                    <option value="5-6h">5-6 hours</option>
+                                                    <option value="6h+">6+ hours</option>
+                                                </select>
+                                            </div>
                                         </div>
                                         <div class="flex-my-activity-item">
                                             <div class="row">
@@ -208,6 +223,25 @@
                                                     <h3>Barber Shop</h3>
                                                 </div>
                                             </div>
+                                            <form>
+                                                <div id="card-radio-button">
+                                                    <label for="yes_no_radio">Wear Mask?</label>
+                                                    <input type="radio" value="mask-yes" name="yes_no">Yes</input>
+                                                    <input type="radio" value="mask-no" name="yes_no">No</input>
+                                                </div>
+                                            </form>
+                                            <div id="card-select-box">
+                                                <label for="select_box">Duration?</label>
+                                                <select name="duration" id="duration">
+                                                    <option value="0-1h">0-1 hour</option>
+                                                    <option value="1-2h">1-2 hours</option>
+                                                    <option value="2-3h">2-3 hours</option>
+                                                    <option value="3-4h">3-4 hours</option>
+                                                    <option value="4-5h">4-5 hours</option>
+                                                    <option value="5-6h">5-6 hours</option>
+                                                    <option value="6h+">6+ hours</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </section>
                                 </div>
@@ -221,11 +255,64 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-1 icon">
-                                                    <img src="css/images/icons/shopping.png" alt="shopping" id="icon" />
+                                                    <img src="css/images/icons/handshake.png" alt="handshake" id="icon" />
                                                 </div>
                                                 <div class="col">
-                                                    <h3>Grocery Shopping</h3>
+                                                    <h3>Shaking Hands</h3>
                                                 </div>
+                                            </div>
+                                            <form>
+                                                <div id="card-radio-button">
+                                                    <label for="yes_no_radio">Wear Mask?</label>
+                                                    <input type="radio" value="mask-yes" name="yes_no">Yes</input>
+                                                    <input type="radio" value="mask-no" name="yes_no">No</input>
+                                                </div>
+                                            </form>
+                                            <div id="card-select-box">
+                                                <label for="select_box">Duration?</label>
+                                                <select name="duration" id="duration">
+                                                    <option value="0-1h">0-1 hour</option>
+                                                    <option value="1-2h">1-2 hours</option>
+                                                    <option value="2-3h">2-3 hours</option>
+                                                    <option value="3-4h">3-4 hours</option>
+                                                    <option value="4-5h">4-5 hours</option>
+                                                    <option value="5-6h">5-6 hours</option>
+                                                    <option value="6h+">6+ hours</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="flex-my-activity-item">
+                                            <div class="row act-row">
+                                                <div id="container">
+                                                    <div id="close">
+                                                        ×
+                                                    </div>
+                                                </div>
+                                                <div class="col-1 icon">
+                                                    <img src="css/images/icons/subway.png" alt="subway" id="icon" />
+                                                </div>
+                                                <div class="col">
+                                                    <h3>Subway</h3>
+                                                </div>
+                                            </div>
+                                            <form>
+                                                <div id="card-radio-button">
+                                                    <label for="yes_no_radio">Wear Mask?</label>
+                                                    <input type="radio" value="mask-yes" name="yes_no">Yes</input>
+                                                    <input type="radio" value="mask-no" name="yes_no">No</input>
+                                                </div>
+                                            </form>
+                                            <div id="card-select-box">
+                                                <label for="select_box">Duration?</label>
+                                                <select name="duration" id="duration">
+                                                    <option value="0-1h">0-1 hour</option>
+                                                    <option value="1-2h">1-2 hours</option>
+                                                    <option value="2-3h">2-3 hours</option>
+                                                    <option value="3-4h">3-4 hours</option>
+                                                    <option value="4-5h">4-5 hours</option>
+                                                    <option value="5-6h">5-6 hours</option>
+                                                    <option value="6h+">6+ hours</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </section>
@@ -260,13 +347,13 @@
             </div>
         </div>
     </div>
-    </div>
+</div>
 </body>
 <footer>
-    <div id="copyright" class="container">
-        <p>Results provided do not reflect actual risks. Some data references <a target="_blank" href="https://www.texmed.org/TexasMedicineDetail.aspx?id=53977">the study by Texas Medical Association</a>.</p>
-        <p>Copyright &copy; 2020 Wendell Li, George Gu, Zexin Lyu</p>
-    </div>
+<div id="copyright" class="container">
+    <p>Results provided do not reflect actual risks. Some data references <a target="_blank" href="https://www.texmed.org/TexasMedicineDetail.aspx?id=53977">the study by Texas Medical Association</a>.</p>
+    <p>Copyright &copy; 2020 Wendell Li, George Gu, Zexin Lyu</p>
+</div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
