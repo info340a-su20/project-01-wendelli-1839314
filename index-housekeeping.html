@@ -396,22 +396,22 @@
                         <input class="searchbox" type="text" placeholder="  Search" aria-label="Search" id="searchbox-mobile">
                         <button class="btn btn-rounded btn-sm" type="submit" id="btn-rounded-mobile"><i><img src="css/images/icons/search.png" alt="search" class="search-icon"></i></button>
                     </form>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons" id="btn-default-mobile">
-                        <label class="btn btn-default active">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-default active" id="btn-default-mobile">
                         <input type="radio" name="options" id="option1" autocomplete="off" checked> Housekeeping
                     </label>
-                        <label class="btn btn-default">
+                        <label class="btn btn-default" id="btn-default-mobile">
                         <input type="radio" name="options" id="option2" autocomplete="off">
                         <a class="categorylink" href="index-job.html">Job</a>
                     </label>
-                        <label class="btn btn-default">
+                        <label class="btn btn-default" id="btn-default-mobile">
                         <input type="radio" name="options" id="option3" autocomplete="off">
                         <a class="categorylink" href="index-transportation.html">Transportation</a>
                     </label>
-                        <label class="btn btn-default">
+                        <label class="btn btn-default" id="btn-default-mobile">
                         <input type="radio" name="options" id="option3" autocomplete="off"><a class="categorylink" href="index-entertainment.html">Entertainment</a>
                     </label>
-                        <label class="btn btn-default">
+                        <label class="btn btn-default" id="btn-default-mobile">
                         <input type="radio" name="options" id="option3" autocomplete="off"><a class="categorylink" href="index-miscellaneous.html">Miscellaneous</a>
                     </label>
                     </div>
@@ -533,160 +533,158 @@
                 <section class="flex3-item-1">
                     <h2>My Activities</h2>
                     <p>Tell us if you did/did not wear masks and the duration of each activity.</p>
+                    <p>Note: We calculate your risk level by factoring all activities you engage within a day along with the associated attributes.</p>
                     <div class="dropzone-mobile">
-                        <div class="list-container">
-                            
-                                    <section class="flex3-item1-1">
-                                        <div class="flex-my-activity-item">
-                                            <div class="row act-row">
-                                                <div id="container">
-                                                    <div id="close">
-                                                        ×
-                                                    </div>
-                                                </div>
-                                                <div class="col-1 icon">
-                                                    <img src="css/images/icons/mailbox.png" alt="mailbox" id="icon" />
-                                                </div>
-                                                <div class="col">
-                                                    <h3>Check Mailbox</h3>
-                                                </div>
-                                            </div>
-                                            <form>
-                                                <div id="card-radio-button">
-                                                    <label for="yes_no_radio">Wear Mask?</label>
-                                                    <input type="radio" value="mask-yes" name="yes_no">Yes</input>
-                                                    <input type="radio" value="mask-no" name="yes_no">No</input>
-                                                </div>
-                                            </form>
-                                            <div id="card-select-box">
-                                                <label for="select_box">Duration?</label>
-                                                <select name="duration" id="duration">
-                                                    <option value="0-1h">0-1 hour</option>
-                                                    <option value="1-2h">1-2 hours</option>
-                                                    <option value="2-3h">2-3 hours</option>
-                                                    <option value="3-4h">3-4 hours</option>
-                                                    <option value="4-5h">4-5 hours</option>
-                                                    <option value="5-6h">5-6 hours</option>
-                                                    <option value="6h+">6+ hours</option>
-                                                </select>
+                        <div class="list-container">             
+                            <section class="flex3-item1-1">
+                                <div class="flex-my-activity-item">
+                                    <div class="row act-row">
+                                        <div id="container">
+                                            <div id="close">
+                                                ×
                                             </div>
                                         </div>
-                                        <div class="flex-my-activity-item">
-                                            <div class="row">
-                                                <div id="container">
-                                                    <div id="close">
-                                                        ×
-                                                    </div>
-                                                </div>
-                                                <div class="col-1 icon">
-                                                    <img src="css/images/icons/barbershop.png" alt="barbershop" id="icon" />
-                                                </div>
-                                                <div class="col">
-                                                    <h3>Barber Shop</h3>
-                                                </div>
-                                            </div>
-                                            <form>
-                                                <div id="card-radio-button">
-                                                    <label for="yes_no_radio">Wear Mask?</label>
-                                                    <input type="radio" value="mask-yes" name="yes_no">Yes</input>
-                                                    <input type="radio" value="mask-no" name="yes_no">No</input>
-                                                </div>
-                                            </form>
-                                            <div id="card-select-box">
-                                                <label for="select_box">Duration?</label>
-                                                <select name="duration" id="duration">
-                                                    <option value="0-1h">0-1 hour</option>
-                                                    <option value="1-2h">1-2 hours</option>
-                                                    <option value="2-3h">2-3 hours</option>
-                                                    <option value="3-4h">3-4 hours</option>
-                                                    <option value="4-5h">4-5 hours</option>
-                                                    <option value="5-6h">5-6 hours</option>
-                                                    <option value="6h+">6+ hours</option>
-                                                </select>
+                                        <div class="col-1 icon">
+                                            <img src="css/images/icons/mailbox.png" alt="mailbox" id="icon" />
+                                        </div>
+                                        <div class="col">
+                                            <h3>Check Mailbox</h3>
+                                        </div>
+                                    </div>
+                                    <form>
+                                        <div id="card-radio-button">
+                                            <label for="yes_no_radio">Wear Mask?</label>
+                                            <input type="radio" value="mask-yes" name="yes_no">Yes</input>
+                                            <input type="radio" value="mask-no" name="yes_no">No</input>
+                                        </div>
+                                    </form>
+                                    <div id="card-select-box">
+                                        <label for="select_box">Duration?</label>
+                                        <select name="duration" id="duration">
+                                            <option value="0-1h">0-1 hour</option>
+                                            <option value="1-2h">1-2 hours</option>
+                                            <option value="2-3h">2-3 hours</option>
+                                            <option value="3-4h">3-4 hours</option>
+                                            <option value="4-5h">4-5 hours</option>
+                                            <option value="5-6h">5-6 hours</option>
+                                            <option value="6h+">6+ hours</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="flex-my-activity-item">
+                                    <div class="row">
+                                        <div id="container">
+                                            <div id="close">
+                                                ×
                                             </div>
                                         </div>
-                                        <div class="flex-my-activity-item">
-                                            <div class="row">
-                                                <div id="container">
-                                                    <div id="close">
-                                                        ×
-                                                    </div>
-                                                </div>
-                                                <div class="col-1 icon">
-                                                    <img src="css/images/icons/handshake.png" alt="handshake" id="icon" />
-                                                </div>
-                                                <div class="col">
-                                                    <h3>Shaking Hands</h3>
-                                                </div>
-                                            </div>
-                                            <form>
-                                                <div id="card-radio-button">
-                                                    <label for="yes_no_radio">Wear Mask?</label>
-                                                    <input type="radio" value="mask-yes" name="yes_no">Yes</input>
-                                                    <input type="radio" value="mask-no" name="yes_no">No</input>
-                                                </div>
-                                            </form>
-                                            <div id="card-select-box">
-                                                <label for="select_box">Duration?</label>
-                                                <select name="duration" id="duration">
-                                                    <option value="0-1h">0-1 hour</option>
-                                                    <option value="1-2h">1-2 hours</option>
-                                                    <option value="2-3h">2-3 hours</option>
-                                                    <option value="3-4h">3-4 hours</option>
-                                                    <option value="4-5h">4-5 hours</option>
-                                                    <option value="5-6h">5-6 hours</option>
-                                                    <option value="6h+">6+ hours</option>
-                                                </select>
+                                        <div class="col-1 icon">
+                                            <img src="css/images/icons/barbershop.png" alt="barbershop" id="icon" />
+                                        </div>
+                                        <div class="col">
+                                            <h3>Barber Shop</h3>
+                                        </div>
+                                    </div>
+                                    <form>
+                                        <div id="card-radio-button">
+                                            <label for="yes_no_radio">Wear Mask?</label>
+                                            <input type="radio" value="mask-yes" name="yes_no">Yes</input>
+                                            <input type="radio" value="mask-no" name="yes_no">No</input>
+                                        </div>
+                                    </form>
+                                    <div id="card-select-box">
+                                        <label for="select_box">Duration?</label>
+                                        <select name="duration" id="duration">
+                                            <option value="0-1h">0-1 hour</option>
+                                            <option value="1-2h">1-2 hours</option>
+                                            <option value="2-3h">2-3 hours</option>
+                                            <option value="3-4h">3-4 hours</option>
+                                            <option value="4-5h">4-5 hours</option>
+                                            <option value="5-6h">5-6 hours</option>
+                                            <option value="6h+">6+ hours</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="flex-my-activity-item">
+                                    <div class="row">
+                                        <div id="container">
+                                            <div id="close">
+                                                ×
                                             </div>
                                         </div>
-                                        <div class="flex-my-activity-item">
-                                            <div class="row act-row">
-                                                <div id="container">
-                                                    <div id="close">
-                                                        ×
-                                                    </div>
-                                                </div>
-                                                <div class="col-1 icon">
-                                                    <img src="css/images/icons/subway.png" alt="subway" id="icon" />
-                                                </div>
-                                                <div class="col">
-                                                    <h3>Subway</h3>
-                                                </div>
-                                            </div>
-                                            <form>
-                                                <div id="card-radio-button">
-                                                    <label for="yes_no_radio">Wear Mask?</label>
-                                                    <input type="radio" value="mask-yes" name="yes_no">Yes</input>
-                                                    <input type="radio" value="mask-no" name="yes_no">No</input>
-                                                </div>
-                                            </form>
-                                            <div id="card-select-box">
-                                                <label for="select_box">Duration?</label>
-                                                <select name="duration" id="duration">
-                                                    <option value="0-1h">0-1 hour</option>
-                                                    <option value="1-2h">1-2 hours</option>
-                                                    <option value="2-3h">2-3 hours</option>
-                                                    <option value="3-4h">3-4 hours</option>
-                                                    <option value="4-5h">4-5 hours</option>
-                                                    <option value="5-6h">5-6 hours</option>
-                                                    <option value="6h+">6+ hours</option>
-                                                </select>
+                                        <div class="col-1 icon">
+                                            <img src="css/images/icons/handshake.png" alt="handshake" id="icon" />
+                                        </div>
+                                        <div class="col">
+                                            <h3>Shaking Hands</h3>
+                                        </div>
+                                    </div>
+                                    <form>
+                                        <div id="card-radio-button">
+                                            <label for="yes_no_radio">Wear Mask?</label>
+                                            <input type="radio" value="mask-yes" name="yes_no">Yes</input>
+                                            <input type="radio" value="mask-no" name="yes_no">No</input>
+                                        </div>
+                                    </form>
+                                    <div id="card-select-box">
+                                        <label for="select_box">Duration?</label>
+                                        <select name="duration" id="duration">
+                                            <option value="0-1h">0-1 hour</option>
+                                            <option value="1-2h">1-2 hours</option>
+                                            <option value="2-3h">2-3 hours</option>
+                                            <option value="3-4h">3-4 hours</option>
+                                            <option value="4-5h">4-5 hours</option>
+                                            <option value="5-6h">5-6 hours</option>
+                                            <option value="6h+">6+ hours</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="flex-my-activity-item">
+                                    <div class="row act-row">
+                                        <div id="container">
+                                            <div id="close">
+                                                ×
                                             </div>
                                         </div>
-                                    </section>
-                                
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="row calculator-row">
-                        <div class="col-8">
-                            <p class="calculation-description">Note: We calculate your risk level by factoring all activities you engage within a day along with the associated attributes.</p>
-                        </div>
-                        <div class="col button-col">
-                            <button type="button" class="btn btn-success btn-md" id="calculate">Calculate</button>
+                                        <div class="col-1 icon">
+                                            <img src="css/images/icons/subway.png" alt="subway" id="icon" />
+                                        </div>
+                                        <div class="col">
+                                            <h3>Subway</h3>
+                                        </div>
+                                    </div>
+                                    <form>
+                                        <div id="card-radio-button">
+                                            <label for="yes_no_radio">Wear Mask?</label>
+                                            <input type="radio" value="mask-yes" name="yes_no">Yes</input>
+                                            <input type="radio" value="mask-no" name="yes_no">No</input>
+                                        </div>
+                                    </form>
+                                    <div id="card-select-box">
+                                        <label for="select_box">Duration?</label>
+                                        <select name="duration" id="duration">
+                                            <option value="0-1h">0-1 hour</option>
+                                            <option value="1-2h">1-2 hours</option>
+                                            <option value="2-3h">2-3 hours</option>
+                                            <option value="3-4h">3-4 hours</option>
+                                            <option value="4-5h">4-5 hours</option>
+                                            <option value="5-6h">5-6 hours</option>
+                                            <option value="6h+">6+ hours</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </section>
+                <div class="row">
+                    <div class="col button-col">
+                        <button type="button" class="btn btn-success btn-md" id="mobile-button-2">Back</button>
+                    </div>
+                    <div class="col button-col">
+                        <button type="button" class="btn btn-success btn-md" id="mobile-button-2">Calculate</button>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- end of page 2 --------------------------------------------------------------------->
