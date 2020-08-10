@@ -1,511 +1,11 @@
 /*********************************************************************************/
-/* Media 598px                                                                   */
+/* Media 375px                                                                   */
 /*********************************************************************************/
-@media (min-width: 598px) {
-    /*<-------------------------Element For all Page------------------------------>*/
-    /* hide all large screen html */
-    /* #pg1, #pg2, #pg3, footer, #pg1-about {
-        display: none;
-    } */
-    
-    /* show first page */
-    /* #pg1-mobile, #pg1-about-mobile {
-        display: block;
-    } */
-
-    /* show second page, overrides show first page */
-    #pg2-mobile, #pg1-about-mobile {
-        display: block;
-    }
-    
-    #pg1-mobile, #pg1-mobile, #pg1, #pg2, #pg3, footer, #pg1-about {
-        display: none;
-    }
-
-    #copyright-mobile {
-        display: block;
-    }
-
-    #pg1-mobile, #pg2-mobile {
-        width: 80%;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
-    html {
-        height: 100%;
-    }
-
-    body {
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        background-color: white;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 11pt;
-        font-weight: 300;
-        color: #6c6c6c;
-    }
-
-    h1 {
-        letter-spacing: 0.15em; 
-        margin: 0;
-        margin-bottom: 1em;
-        padding: 0;
-        font-weight: 600;
-        color: #454445;
-    }
-
-    h2 {
-        margin: 0;
-        padding: 0;
-        font-weight: 600;
-        color: #454445;
-    }
-
-    h3 {
-        margin: 0.3em;
-        padding-top: 0.3em;
-        font-weight: 300;
-        font-size: 1em;
-        color: #454445;
-        text-align: center;
-    }
-
-    p {
-        line-height: 180%;
-        font-size: 25pt;
-        margin-top: 1em;
-        letter-spacing: 0.02em;
-    }
-
-    #mobile-button {
-        margin-top: 3em;
-        width: 775px;
-        height: 98px;
-        font-size: 28pt;
-        border-radius: 15px;
-        letter-spacing: 0.1em;
-        position: relative;
-        bottom: 58px;
-        left: 10px;
-    }
-
-    #mobile-button-2 {
-        margin-top: 3em;
-        width: 380px;
-        height: 98px;
-        font-size: 28pt;
-        border-radius: 15px;
-        letter-spacing: 0.1em;
-        position: relative;
-        bottom: 58px;
-        left: 10px;
-    }
-
-    ol, ul {
-        padding: 0;
-        list-style: none;
-    }
-
-    a:hover {
-        text-decoration: none;
-    }
-
-    .col {
-        text-align: center;
-        padding-left: 0em;
-        margin-top: 0.3em;
-    }
-
-    #wrapper {
-        background: #FFF;
-    }
-   
-    #icon {
-        width: 30px;
-        height: 30px;
-        margin: 0.5em;
-    }
-
-    /* -------Logo----------*/
-    #logo {
-        position: relative;
-        width: 100%;
-    }
-
-    #logo h1 {
-        display: inline-block;
-        font-size: 2.5em;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: #FFF;
-    }
-
-    #logo a {
-        text-decoration: none;
-        color: #FFF;
-    }
-
-    /* -------All-flex-item-Container----------*/
-    .flex-container {
-        margin: auto;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        height: 100%;
-    }
-
-    .list-container {
-        padding: 0.5em;
-    }
-
-    .flex-item-6 {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-left:170px;
-        zoom: 1.5;
-    }
-
-    .flex-item-7 {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-left:170px;
-        zoom: 1.5;
-    }
-
-    .flex-item-8 {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-left:170px;
-        zoom: 1.5;
-    }
-    
-
-
-    /* -------Menu----------*/
-    #menu {
-        position: absolute;
-        text-align: center;
-    }
-
-    #menu ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    #menu li {
-        display: inline-block;
-        text-align: center;
-    }
-
-    #menu li a,
-    #menu li span {
-        display: block;
-        margin: 0px 1px;
-        padding: 0em 2em;
-        letter-spacing: 0.15em;
-        line-height: 57px;
-        text-decoration: none;
-        font-size: 32px;
-        font-weight: 600;
-        text-transform: uppercase;
-        outline: 0;
-        color: #FFF;
-    }
-
-    #menu li:hover a,
-    #menu li.active a,
-    #menu li.active span {
-        background: #202d45;
-        color: #FFF;
-    }
-
-    #menu .current_page_item a {
-        background: #202d45;
-        color: #FFF;
-    }
-
-    /* -------header----------*/
-    #header {
-        position: relative;
-        padding: 4em;
-        background-image: url("images/Calculator-bg.jpg");
-        background-position: bottom;
-        background-size: cover;
-    }
-
-    /*<------------------------------------Page One---------------------------------->*/
-    #people {
-        height: 24em;
-        width: 50em;
-        background-position: top;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-color: white;
-        margin-bottom: 3em;
-    }
-
-    .app-description {
-        text-align: left;
-    }
-
-    /*<------------------------------------Page Two----------------------------------->*/
-    #pg2 {
-
-    }
-
-    /* -------activity category searchbox----------*/
-    #btn-rounded-mobile {
-        background-color: #475a7b;
-        margin-left: 10px;
-        width: 90px;
-        height: 60px;
-        margin-bottom: 8px;
-        align-content: right;
-    }
-
-    #btn-rounded-mobile:hover {
-        background-color: #202d45;
-    }
-
-    #searchbox-mobile {
-        width: 660px;
-        height: 60px;
-        margin-bottom: 7px;
-        border-color: #475a7b;
-        border-radius: 0.3rem;
-        font-size: 25px;
-    }
-    
-    .search-icon {
-        width: 30px;
-        height: 30px;
-    }
-
-    /* -------activity category selector button----------*/
-    #btn-default-mobile {
-        background-color: #475a7b;
-        color: white;
-        font-size: 22.3px;
-        height: 2.3em;
-    }
-
-    .active {
-        background-color: #202d45 !important;
-        color: white;
-    }
-
-    #btn-default-mobile:hover {
-        background-color: #202d45 !important;
-        color: white;
-    }
-
-    /* -------activity center----------*/
-    .activityList-mobile {
-        background-color: lightgrey;
-        height: 1200px;
-        width: 100%;
-        border-radius: 5px;
-        margin-left: 0;
-        margin-right: auto;
-        margin-bottom: 50px;
-    }
-    
-    .flex-activity-item-mobile {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-        width: 88%;
-        height: 45px;
-        margin: 0.7rem;
-        background-color: white;
-        border-radius: 5px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        zoom: 2.0;
-    }
-
-    .flex-activity-item-mobile:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        background-color: #7688a8;
-    }
-
-    .categorylink {
-        color: white;
-    }
-
-    .dropzone-mobile {
-        background-color: lightgrey;
-        width: 94%;
-        height: 558px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        border-radius: 5px;
-        vertical-align: center;
-        zoom: 2;
-    }
-
-    .flex-my-activity-item {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-        width: 90%;
-        height: 120px;
-        margin: 0.7rem;
-        background-color: white;
-        border-radius: 5px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
-    .option {
-        font-size: 1px;
-    }
-
-    #pg2-mobile h2 {
-        font-size: 350%;
-        margin-top: 20px;
-    }
-
-    #pg2-mobile p {
-        font-size: 200%;
-        margin-top: 10px;
-    }
-
-    
-    /*<-----------------------------------Page Three---------------------------------->*/
-    #pg3 {
-        margin-top: 30px;
-    }
-
-    .container {
-        padding: 3.5em;
-    }
-
-    .result {
-        background-color: lightgrey;
-        height: 358px;
-        width: 1100px;
-        border-radius: 5px;
-        margin-top: 10px;
-    }
-
-    .flex4-item-1 {
-        margin-right: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-size: 18pt;
-    }
-
-    .flex4-item-2 {
-        margin-right: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-size: 18pt;
-    }
-
-    /*<-----------------------------------About Page-------------------------------->*/
-    #social {
-        height: 30px;
-        width: 30px;
-        margin-bottom: 15px;
-    }
-
-    #profile {
-        height: 12em;
-        width: 12em;
-        background-repeat: no-repeat;
-        background-color: white;
-        margin-top: 25px;
-        margin-bottom: 15px;
-    }
-
-    #name {
-        margin-bottom: 10px;
-        font-size: 20pt;
-    }
-
-    #list {
-        font-size: 13pt;
-    }
-
-   /*<-----------------------------------footer-------------------------------->*/
-    footer {
-        background-color: #202d45;
-    }
-
-    #copyright-mobile {
-        float: bottom;
-        overflow: hidden;
-    }
-
-    #copyright {
-        overflow: hidden;
-    }        
-        
-    #copyright p {
-        letter-spacing: 0.15em;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.9em;
-        color: white;        
-    }        
-        
-    #copyright a {        
-        color: white;
-    }                                       
-                                
-    #close {       
-        text-align: center; 
-        height: 1.65em;        
-        width: 1.65em;        
-        border-radius: 50px;
-        position: relative;        
-        background: white;        
-        color: #202d45;        
-        top: -10px;
-        left: auto;        
-        border: 1px solid lightgray;
-        font-weight: 600;
-    }        
-                                    
-    #close:hover {
-        background-color: #202d45;
-        color: white;
-         cursor: pointer;
-    }        
-}        
-        
-/*********************************************************************************/
-/* media 768px                                                                   */
-/*********************************************************************************/
-@media (min-width: 768px) {}        
-        
-        
-/*********************************************************************************/
-/* media 992px                                                                   */
-/*********************************************************************************/
-@media (min-width: 992px) {}        
-        
-        
-        
-/*********************************************************************************/
-/* media 1200px                                                                  */
-/*********************************************************************************/
-@media (min-width: 1200px) {        
-    /*<-------------------------Element For all Page------------------------------>*/
-    html {        
-        height: 100%;        
-    }        
+@media (min-width: 375px) {
+    /*<-------------------------Element For all Page------------------------------>*/    
         
     * {        
-        box-sizing: border-box;        
+        box-sizing: border-box;     
     }        
         
     body {        
@@ -516,26 +16,22 @@
         font-family: 'Open Sans', sans-serif;
         font-size: 11pt;        
         font-weight: 300;        
-        color: #6c6c6c;        
+        color: #6c6c6c;      
     }        
         
     p {        
-        font-size: 11pt;        
-    }        
-    
-    #pg1, #pg2, #pg3, footer, #pg1-about {
-        display: block;        
-    }
-    
-    #pg1-mobile, #pg2-mobile, #pg3-mobile, #pg1-about-mobile {
-        display: none;        
+        line-height: 180%; 
+        font-size: 12pt;
+        width: 80%;
+        word-wrap: break-word;
     }
     
     h1 {        
         margin: 0.15em;        
-        padding: 0;        
+        padding: 0;
+        line-height: 180%;  
         font-weight: 600;        
-                color: #454445;
+        color: #454445;
     }
         
     h2 {        
@@ -543,7 +39,7 @@
         margin-bottom: 0.5em;        
         padding: 0;        
         font-weight: 600;        
-        color: #454445;        
+        color: #454445;     
     }        
             
     h3 {        
@@ -553,86 +49,75 @@
         font-size: 1em;        
         color: #454445;        
         text-align: center;        
-    }        
-        
-    p {        
-        line-height: 180%;        
-    }        
+    }              
         
     a:hover {        
         text-decoration: none;        
     }        
-        
+     
+    .row {
+        margin: 0;
+    }
+    
     #wrapper {        
         background: #FFF;        
     }        
         
     /*<-------------------------All Container------------------------------>*/
     .list-container {        
-        padding: 0.5em;        
+        padding: 0.5em;  
+        width: 100%;    
+        align-content: center;  
     }        
         
-    .container {        
-        padding: 3.5em;        
+    .container {
+        padding: 3.5em;   
     }        
         
-    .flex-container {        
+    .flex-container {
         margin: auto;        
-        width: 1100px;        
+        width: 100%;        
         display: flex;        
         flex-wrap: wrap;        
         height: 100%;        
         text-align: center;        
     }        
         
-    .flex-item-1 {        
-        margin-left: 20px;        
+    .flex-item-1 {               
         margin-top: 30px;        
-        margin-bottom: 30px;        
-    }        
-        
-    .flex-item-2 {        
-        margin-right: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+        margin-bottom: 10px;        
+    } 
 
-    .flex-item-3 {        
-        margin-left: 20px;        
+    .flex-item-2 {                     
+        margin-bottom: 10px;        
+    } 
+
+    .flex-item-3 {               
         margin-top: 30px;        
         margin-bottom: 30px;        
     }        
-        
-    .flex-item-4 {        
-        margin-right: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-        
-    .flex-item-5 {        
-        margin-right: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }           
+              
         
     /*<------------------------------------Header------------------------------>*/
     #header {        
         position: relative;        
-        padding: 4em;        
+        padding-bottom: 4em;
+        padding-top: 4em;
         background-image: url("images/Calculator-bg.jpg");
         background-position: bottom;        
-        background-size: cover;        
-    }        
-        
+        background-size: cover;   
+        text-align: center;   
+    }
+    
     #logo {        
         position: relative;        
-        top: 0em;        
-        width: 100%;        
+        bottom: 2em;        
+        width: 100%;
     }        
         
     #logo h1 {        
         display: inline-block;        
-        font-size: 2.5em;        
+        font-size: 2.2em;        
         text-transform: uppercase;        
         font-weight: 700;        
         color: #FFF;        
@@ -645,34 +130,33 @@
         
     /*<---------------------------------------Menu------------------------------>*/
     #menu {        
-        position: absolute;        
-        right: 5em;        
-    }        
-        
+        position: absolute;
+        width: 100%;
+    }
+
     #menu ul {        
-        list-style-type: none;        
-        margin: 0;        
-        padding: 0;        
-        overflow: hidden;        
+        list-style-type: none;
+        overflow: hidden;
+        width: 100%;
     }        
         
     #menu li {        
         display: inline-block;        
-        text-align: center;        
-    }        
-        
+        text-align: center;    
+        width: 49%;  
+    }
+
     #menu li a, #menu li span {        
         display: block;        
-        margin: 0px 1px;        
-        padding: 0em 2em;        
-        letter-spacing: 0.20em;        
+        letter-spacing: 0.20em;
+        width: 100%;
         line-height: 57px;        
         text-decoration: none;        
         font-size: 1em;        
         font-weight: 600;        
         text-transform: uppercase;        
         outline: 0;        
-        color: #FFF;        
+        color: #FFF;      
     }        
         
     #menu li:hover a,
@@ -682,42 +166,70 @@
         color: #FFF;        
     }        
         
-    #menu .current_page_item a {        
+    #menu .current_page_item {   
         background: #202d45;        
         color: #FFF;        
     }        
         
     /*<-------------------------app description/people image------------------------------>*/
-    .app-description {        
-        text-align: left;        
+    .flex-item-1, .flex-item-2, #pg1 {
+        align-content: center;
+        width: 100%;
+    }
+
+    .app-description {
+        text-align: left;
+        align-content: center;
+        width: 100%;
+        padding: 2em;
     }        
-        
+    
     .articleLink {        
         color: #068900;        
     }        
         
-    #people {        
-        height: 16em;        
-        width: 40em;        
+    #people {    
+        width: 100%;        
         background-position: top;        
         background-size: contain;        
         background-repeat: no-repeat;        
-        background-color: white;        
+        background-color: white;
+        align-content: center;
+        align-self: center;
+        padding: 2em;
     }        
-        
+    
     /*<-------------------------Activity Center------------------------------>*/
+    #pg2 {
+        width: 100%;
+    }
+    
     .categorylink {        
         color: white;        
     }        
         
-     /*<-------Search Box-------->*/        
+     /*<-------Search Box-------->*/
+    .flex2-item-1 {
+        align-content: center;
+        width: 100%;
+    }
+
+    .form-inline {
+         align-content: right;
+         width: 100%;
+    }
+     
+    .btn-group.btn-group-toggle {
+        zoom: 0.6 !important;
+        width: 100%;
+    }
+
     .btn-rounded {        
         background-color: #475a7b;        
-        margin-left: 10px;        
-        width: 55px;        
-        height: 20;        
-        margin-bottom: 8px;        
-        align-content: right;        
+        margin-left: 1%;        
+        width: 47px;        
+        height: 40px;        
+        margin-bottom: 8px;          
     }        
         
     .btn-rounded:hover {        
@@ -725,21 +237,23 @@
     }        
             
     .searchbox {        
-        width: 88.5%;        
-        height: 35px;        
-        margin-bottom: 7px;        
+        width: 85%;        
+        height: 40px;        
+        margin-bottom: 7px;
+        align-content: center;       
         border-color: #475a7b;        
-        border-radius: 0.3rem;        
+        border-radius: 0.3rem; 
     }        
+
     .search-icon {        
-        width: 30px;        
-        height: 30px;        
+        width: 20px;        
+        height: 20px;
     }        
         
-    /*<-------Category Selection-------->*/        
+    /*<-------Category Selection-------->*/   
     .btn-default {        
         background-color: #475a7b;        
-        color: white;        
+        color: white;
     }        
             
     .active {        
@@ -760,22 +274,27 @@
         
     .activityList {        
         background-color: lightgrey;
-        height: 308px;        
-        margin-bottom: 5        0px;
+        height: auto;   
+        width: 100%;     
+        margin-bottom: 50px;
         margin-top: 10px;        
-        border-radius: 5px;        
+        border-radius: 5px;     
     }        
+    
+    #pg2{
+        align-content:center;
+    }
         
     .flex-activity-item {        
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.2s;
-        width: 80%;        
+        width: 100%;        
         height: 45px;
-        margin: 0.7rem;
+        margin: 0.5rem;
         background-color: white;
         border-radius: 5px;
         display: block;
-        margin-left: auto;
+        margin-left: 17%;
         margin-right: auto;
     }
     
@@ -784,59 +303,97 @@
         background-color: #7688a8;
     }
 
+    .flex2-item-1 h2{
+        text-align: center;
+    }
+
+    .flex2-item-1 p{
+        text-align: center;
+        width: 100%;
+    }
+
     /*<-------------------------My Activity------------------------------>*/
     .dropzone {
         background-color: lightgrey;
-        height: 300px;
-        border-radius: 5px;
+        height: 562px;
+        width:  100%; 
+        margin-bottom: 20px;
+        margin-top: 10px;        
+        border-radius: 5px;  
+    }
+
+    section.flex3-item1-1 {
+        width:100%;
+    }
+
+
+    section.flex3-item-1 p{
+        width: 100%;
     }
 
     .flex-my-activity-item {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.2s;
-        width: 90%;
+        width: 100%;
         height: 120px;
-        margin: 0.7rem;
+        margin:0.5em;
         background-color: white;
         border-radius: 5px;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 20%;
     }
 
     p.calculation-description {
         text-align: left;
-        padding-left: 20px;
         font-size: 13px;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
         margin-top: 5px;
+        width: 100%;
     }
 
     div.col.button-col {
         text-align: right;
     }
 
+    .calculator-row {
+        width: 100%;
+        align-content: center;
+    }
+
+    #calculate-btn {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
     #calculate {
         margin-top: 0.3em;
-        height: 70px;
-        width: 95px;
+        height: 43px;
+        width: 100%;
+    }
+
+    .col-3.icon{
+        margin-right: 5px;
     }
 
     /*<-------------------------Result------------------------------>*/
     .result {
         background-color: lightgrey;
-        height: 300px;
-        width: 1100px;
+        height: 540px;
+        width: 90%;
         border-radius: 5px;
         margin-top: 15px;
         margin-bottom: 50px;
+        margin-left: 5.5%;
+    }
+
+    #risk-level-h {
+        /* color should follow risk level color */
+        color: #f56733;
     }
 
     .flex4-item-1 {
-        margin-right: 20px;
         margin-top: 30px;
         margin-bottom: 30px;
+        border-top: 20px;
     }
 
     .flex4-item-2 {
@@ -845,31 +402,109 @@
         margin-bottom: 30px;
     }
 
-    .flex4-item-1 h3{
-        font-size: 23pt;
+    .flex4-item-1 h3 {
+        font-size: 20pt;
+        padding-top: 0.5em;
     }
-    
+
     .flex4-item-2 p{
-        font-size: 13pt;
+        font-size:15pt;
+        padding:1.5rem;
+        margin-top: 20px;
     }
     
-    .contain-result{
+    .contain-result {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.2s;
-        width: 90%;
-        height: 240px;
+        width: 85%;
+        height: 210px;
         margin: 0.7rem;
         background-color: white;
         border-radius: 5px;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 10%;
     }
 
-   .progress-bar-container{
-       margin-left:9px;
-   }
+    #result-description {
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+        margin-left:4%;
+    }
+
+    .progress-bar-container {
+       margin-top: 30px;
+       margin-left: 5px;
+       margin-right:5px;
+    }
+
+    div#moderate-high.progress-bar {
+       background-color: #f56733 !important;
+       height: 30px !important;
+       font-size:7px !important;
+    }
+
+    div#moderate.progress-bar {
+       background-color: orange !important;
+       height: 30px !important;
+       font-size:7px !important;
+    }
+
+    div#high.progress-bar {
+        height: 30px !important;
+        font-size:7px !important;
+    }
+
+    div#low.progress-bar {
+        height: 30px !important;
+        background-color: #63a64d !important;
+        font-size:7px !important;
+    }
+
+    div#low-moderate.progress-bar {
+        height: 30px !important;
+        font-size:7px !important;
+    }
+
+    .progress{
+        height: 30px !important;
+        font-size:7px !important;
+    }
+
+    .arrow-up {
+        width: 0; 
+        height: 25;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        margin-left: 47vw;
+        animation-duration: 2.5s;
+        animation-name: slidein;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slidein {
+        from {
+          margin-left: 0%;
+          width: 0;
+          border-bottom: 15px solid #63a64d;
+        }
+
+        to {
+          margin-right: 100%;
+          width: 0;
+          border-bottom: 15px solid #f56733;
+          
+        }
+    }
+      
     /*<-------------------------Footer------------------------------>*/
+    footer {
+        background-color: #202d45;
+    }
+
     #copyright {
         overflow: hidden;
     }
@@ -880,6 +515,7 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 0.9em;
         color: rgb(209, 206, 206);
+        width: 100%;
     }
 
     #copyright a {
@@ -895,7 +531,7 @@
         background: white;
         color: #202d45;
         top: -10px;
-        left: auto;
+        left: -10px;
         border: 1px solid lightgray;
         font-weight: 600;
     }
@@ -942,4 +578,413 @@
         margin-bottom: 15px;
     }
 
+    .flex-item-4 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    .flex-item-5 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    .flex-item-6 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        margin-left: 5%;
+    }
+}
+
+
+/*********************************************************************************/
+/* media 768px                                                                   */
+/*********************************************************************************/
+@media (min-width: 768px) {
+    body {        
+        font-size: 12pt;
+        letter-spacing: 0.05em;             
+    }        
+        
+    p {        
+        font-size: 12pt;
+    }
+    
+    h1 {        
+        margin-bottom: 0;        
+        line-height: 100%;  
+    }
+        
+    h2 {        
+        margin-top: 0.5em;        
+        margin-bottom: 0.5em;        
+        padding: 0;        
+        font-weight: 600;        
+        color: #454445;     
+    }        
+            
+    h3 {        
+        margin: 0.3em;        
+        padding-top: 0.3em;        
+        font-weight: 300;              
+        color: #454445;        
+        text-align: center;        
+    }
+
+    /*<---------------------------------------Menu------------------------------>*/
+    #menu li a, #menu li span {        
+        display: block;        
+        letter-spacing: 0.20em;
+        width: 100%;
+        line-height: 60px;        
+        text-decoration: none;        
+        font-size: 1.2em;            
+    }
+
+    /*<------------------------------------Header------------------------------>*/
+    #header {              
+        padding-bottom: 3.8em; 
+    }
+    
+    /*<-------------------------Activity Center------------------------------>*/
+    .form-inline {
+        width: 100%;
+    }
+
+    .btn-group.btn-group-toggle {
+        zoom: 1 !important;
+    }
+
+    .btn-rounded {
+        background-color: #475a7b;        
+        margin-left: 1%;        
+        width: 50px;        
+        height: 40px;        
+        margin-bottom: 8px;        
+    }        
+        
+    .btn-rounded:hover {        
+        background-color: #202d45;        
+    }        
+            
+    .searchbox {        
+        width: 92%;        
+        height: 40px;        
+        margin-bottom: 7px;      
+        border-color: #475a7b;        
+        border-radius: 0.3rem;
+        margin-left:0;
+    }        
+
+    .search-icon {        
+        width: 20px;        
+        height: 20px;
+    } 
+
+    .activityList {        
+        background-color: lightgrey;
+        height: auto;   
+        width: 100%;     
+        padding:0; 
+        margin-left:0;  
+        border-radius: 5px;    
+    }   
+
+    .list-container {        
+        padding: 0.5em;  
+        width:100%;    
+        margin-left: 2.5%; 
+    }    
+
+    /*<-------------------------My Activity-Medium----------------------------->*/
+    .dropzone {
+        background-color: lightgrey;
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;        
+        border-radius: 5px;  
+        align-content:center;
+        margin-left: 0;
+    }
+    
+    .flex3-item1-1{
+        padding-right:1.5rem;
+    }
+    
+    .flex3-item1-2{
+        padding-left:1.5rem;
+        margin-left:20px;
+    }
+
+
+    /*<-------------------------Result-Medium-------------------------------------->*/
+
+    .result {
+        background-color: lightgrey;
+        height: 275px;
+        width: 97%;
+        border-radius: 5px;
+        margin-top: 15px;
+        margin-bottom: 50px;
+        margin-left: 1.5%;
+    }
+
+    #result-description {
+        font-size: 10pt;
+        padding: 10px;
+    }
+
+    .arrow-up {
+        width: 0; 
+        height: 25;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        margin-left: 38vw;
+        animation-duration: 2.5s;
+        animation-name: slidein;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    .contain-result {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+        width: 90%;
+        height: 210px;
+        margin: 0.7rem;
+        background-color: white;
+        border-radius: 5px;
+        display: block;
+        margin-left: 5%;
+    }
+
+    p#result-descriptions {
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+        padding-bottom:0;
+    }
+
+    div#moderate-high.progress-bar {
+        font-size:10px !important;
+    }
+ 
+    div#moderate.progress-bar {
+        font-size:10px !important;
+    }
+ 
+    div#high.progress-bar {
+        font-size:10px !important;
+    }
+ 
+    div#low.progress-bar {
+        font-size:10px !important;
+    }
+ 
+    div#low-moderate.progress-bar {
+        font-size:10px !important;
+    }
+
+    .progress {
+        font-size:10px !important;
+    }
+    
+    /*<-------------------------About Page-------------------------------------->*/
+    .flex-item-4 {
+        padding: 5em;
+        padding-bottom: 0;
+        margin-left: 25%;
+    }
+
+    .flex-item-5 {
+        padding: 5em;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 25%;
+    }
+
+    .flex-item-6 {
+        padding: 5em;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 25%;
+    }
+
+    #list {
+        font-size: 13pt;
+    }
+
+    ol, ul {
+        padding: 0;
+        list-style: none;
+        white-space: nowrap;
+    }
+}        
+                
+
+/*********************************************************************************/
+/* media 1200px                                                                  */
+/*********************************************************************************/
+@media (min-width: 1200px) {
+    /*<------------------------------------Header------------------------------>*/
+    #menu {        
+        width: 45%;
+        margin-left: 55%;
+        font-size: 10pt;
+    }
+
+    #logo {
+        width: 45%;
+    }
+    
+    p {        
+        font-size: 11pt;  
+        width: 100%;      
+    }      
+
+    /*<-------------------------Activity Center------------------------------>*/
+    .categorylink {        
+        color: white;        
+    }        
+        
+    /*<-------Search Box-------->*/        
+    .btn-rounded {        
+        background-color: #475a7b;        
+        margin-left: 10px;        
+        width: 55px;        
+        height: 20;        
+        margin-bottom: 8px;        
+        align-content: right;        
+    }        
+        
+    .btn-rounded:hover {        
+        background-color: #202d45;        
+    }        
+            
+    .searchbox {        
+        width: 88%;        
+        height: 40px;        
+        margin-bottom: 7px;        
+        border-color: #475a7b;        
+        border-radius: 0.3rem;        
+    }        
+    .search-icon {        
+        width: 30px;        
+        height: 30px;        
+    }        
+        
+    /*<-------Category Selection-------->*/        
+    .btn-default {        
+        background-color: #475a7b;        
+        color: white;    
+    }        
+            
+    .active {        
+        background-color: #202d45 !important;        
+        color: white;        
+    }        
+            
+    .btn-default:hover {        
+        background-color: #202d45 !important;        
+        color: white;        
+    }        
+        
+    #icon {        
+        width: 30px;        
+        height: 30px;        
+        margin: 0.5em;        
+    }        
+        
+    .activityList {        
+        background-color: lightgrey;
+        height: 308px;        
+        margin-bottom: 50px;
+        margin-top: 10px;        
+        border-radius: 5px;        
+    }        
+        
+    .flex-activity-item {        
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+        width: 80%;        
+        height: 45px;
+        margin: 0.7rem;
+        background-color: white;
+        border-radius: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex-activity-item:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        background-color: #7688a8;
+    }
+
+    /*<-------------------------My Activity------------------------------>*/
+    .dropzone {
+        background-color: lightgrey;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    .flex-my-activity-item {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+        width: 90%;
+        height: 120px;
+        margin: 0.7rem;
+        background-color: white;
+        border-radius: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p.calculation-description {
+        text-align: left;
+        padding-left: 20px;
+        font-size: 13px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        margin-top: 5px;
+    }
+
+    div.col.button-col {
+        text-align: right;
+    }
+
+    #calculate {
+        margin-top: 0.3em;
+        height: 70px;
+        width: 95px;
+    }
+
+    /*<-------------------------My Activity------------------------------>*/
+    .arrow-up {
+        margin-left: 39vw;
+    }
+    
+    /*<-------------------------About Page-------------------------------------->*/
+    .flex-item-4 {
+        padding: 0;
+        margin-left: 40%;
+    }
+
+    .flex-item-5 {
+        padding: 0;
+        margin-left: 40%;
+    }
+
+    .flex-item-6 {
+        padding: 0;
+        margin-left: 40%;
+    }
 }
