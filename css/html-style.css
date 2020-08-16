@@ -54,21 +54,20 @@
     a:hover {        
         text-decoration: none;        
     }        
-     
-    .row {
-        margin: 0;
-        width: 100%;
-    }
     
     #wrapper {        
         background: #FFF;        
-    }        
+    }
+    
+    .row, .result {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
         
     /*<-------------------------All Container------------------------------>*/
     .list-container {        
         padding: 0.5em;  
-        width: 100%;    
-        
+        width: 100%;   
     }        
         
     .container {
@@ -76,12 +75,12 @@
     }        
         
     .flex-container {
-        margin: auto;        
-        width: 100%;        
-        display: flex;        
-        flex-wrap: wrap;        
-        height: 100%;        
-        text-align: center;        
+        width: 100%;
+        /* display: flex; */
+        flex-wrap: wrap;
+        height: 100%;
+        text-align: center;
+        padding: 0 0px;    
     }        
         
     .flex-item-1 {               
@@ -96,8 +95,7 @@
     .flex-item-3 {               
         margin-top: 30px;        
         margin-bottom: 30px;        
-    }        
-              
+    }
         
     /*<------------------------------------Header------------------------------>*/
     #header {        
@@ -148,7 +146,7 @@
     }
 
     #menu li a, #menu li span {        
-        display: block;        
+        display: block;
         letter-spacing: 0.20em;
         width: 100%;
         line-height: 57px;        
@@ -156,7 +154,7 @@
         font-size: 1em;        
         font-weight: 600;        
         text-transform: uppercase;        
-        outline: 0;        
+        outline: none;        
         color: #FFF;      
     }        
         
@@ -176,6 +174,9 @@
     .flex-item-1, .flex-item-2, #pg1 {
         align-content: center;
         width: 100%;
+        /* display: flex; */
+        align-items: center;
+       
     }
 
     .app-description {
@@ -201,74 +202,114 @@
     }        
     
     /*<-------------------------Activity Center------------------------------>*/
-    #pg2 {
-        width: 100%;
-    }
-    
     .categorylink {        
         color: white;        
     }        
         
      /*<-------Search Box-------->*/
     .flex2-item-1 {
-        align-content: center;
+        align-content: right;
         width: 100%;
     }
 
     .form-inline {
-         align-content: right;
-         width: 100%;
-    }
-     
-    .btn-group {
+        justify-content: center;
         width: 100%;
-        position: relative;
-        transform-origin: 0;
-        transform: scale(0.6);
     }
 
-    .btn-rounded {        
-        background-color: #475a7b;        
-        margin-left: 1%;        
-        width: 47px;        
-        height: 40px;        
-        margin-bottom: 8px;          
-    }        
-        
-    .btn-rounded:hover {        
-        background-color: #202d45;        
-    }        
-            
-    .searchbox {        
-        width: 85%;        
-        height: 40px;        
-        margin-bottom: 7px;
-        align-content: center;       
-        border-color: #475a7b;        
-        border-radius: 0.3rem; 
-    }        
+    input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #475a7b;
+        border-width: 3px;
+        float: left;
+        width: 91%;
+        height: 40px;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+    }
 
-    .search-icon {        
-        width: 20px;        
-        height: 20px;
-    }        
-        
-    /*<-------Category Selection-------->*/   
-    .btn-default {        
-        background-color: #475a7b;        
+    button[type="submit"] {
+        float: left;
+        outline: none;
+        width: 9%;
+        height: 40px;
+        padding: 5px;
+        background: #475a7b;
         color: white;
-    }        
-            
+        font-size: 17px;
+        border-left: none;
+        cursor: pointer;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        border: 1px solid #475a7b;
+        align-content: center;
+    }
+
+    .fa.fa-search {
+        zoom: 1;
+        vertical-align: center;
+        
+    }
+    
+    button[type="submit"]:hover {
+        background: #202d45;
+    }
+    
+    #submit {
+        margin-right: 0;
+    }
+        
+    #searchBar {
+        margin-bottom: 65px;
+    }
+    
+    /*<-------Category Selection-------->*/
+    
+    .btn-group {
+        cursor: pointer; 
+        width: 100%;
+    }
+
+    .menuButton {        
+        background-color: #475a7b;  
+        border-color: #475a7b;
+        border-style: solid;
+        color: white;
+        font-size: 55%;
+        height: 40px;
+        width: 20%;
+        font-weight: bolder;
+    }
+
+    .menuButton[onclick="displayHousekeeping()"], 
+    .menuButton[onclick="displayJob()"],
+    .menuButton[onclick="displayTransportation()"],
+    .menuButton[onclick="displayEntertainment()"],
+    .menuButton[onclick="displayMiscellaneous()"] {
+        outline: none;
+    }
+
+    #option1 {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    
+    #option5 {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    
     .active {        
         background-color: #202d45 !important;        
         color: white;        
     }        
-            
-    .btn-default:hover {        
+    
+    .menuButton:hover {        
         background-color: #202d45 !important;        
         color: white;        
     }        
-        
+    
     #icon {        
         width: 30px;        
         height: 30px;        
@@ -281,55 +322,76 @@
         width: 100%;     
         margin-bottom: 50px;
         margin-top: 10px;        
-        border-radius: 5px;     
+        border-radius: 8px;     
     }        
     
-    #pg2{
-        align-content:center;
+    #pg2 {
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
     }
         
     .flex-activity-item {        
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.2s;
-        width: 100%;        
         height: 45px;
         margin: 0.5rem;
         background-color: white;
-        border-radius: 5px;
+        border-radius: 8px;
         display: block;
-        margin-left: 17%;
-        margin-right: auto;
+        align-items: center;
     }
     
+    .flex2-item-1-1 {
+        align-content: center;
+        align-items: center;
+    }
+
     .flex-activity-item:hover {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         background-color: #7688a8;
     }
 
-    .flex2-item-1 h2{
+    .flex2-item-1 h2 {
         text-align: center;
     }
 
-    .flex2-item-1 p{
+    .flex2-item-1 p {
         text-align: center;
         width: 100%;
+    }
+
+    #allRows {
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     /*<-------------------------My Activity------------------------------>*/
     .dropzone {
         background-color: lightgrey;
         height: 562px;
-        width: 96%; 
+        width: 100%; 
         margin-bottom: 20px;
         margin-top: 10px;        
-        border-radius: 5px;
-        margin-left: 4%;  
+        border-radius: 8px; 
     }
 
-    section.flex3-item1-1 {
-        text-align: center;
+    .my-activity-row {
+        width: 100%;
+        justify-content: center;
+        align-content:center;
+        margin: 0 0;
     }
-
+    
+    .flex3-item1-1 {
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+    }
+    
     section.flex3-item-1 p {
         width: 100%;
     }
@@ -341,10 +403,9 @@
         height: 125px;
         margin:0.5rem;
         background-color: white;
-        border-radius: 5px;
+        border-radius: 8px;
         display: block;
-        margin-left: 20%;
-        margin-right: auto;
+        justify-content: center;
     }
 
     p.calculation-description {
@@ -359,13 +420,16 @@
     }
 
     .calculator-row {
-        width: 100%;
+        width: 92%;
         align-content: center;
+        justify-content:center;
     }
 
     #calculate-btn {
         width: 100%;
         margin-bottom: 30px;
+        justify-content: center;
+        align-content: center;
     }
 
     #calculate {
@@ -382,16 +446,21 @@
     .result {
         background-color: lightgrey;
         height: 540px;
-        width: 90%;
-        border-radius: 5px;
-        margin-top: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
         margin-bottom: 50px;
-        margin-left: 5.5%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #risk-level-title {
+        padding-top: 25px;
     }
 
     #risk-level-h {
         /* color should follow risk level color */
         color: #f56733;
+        margin-top: 10px;
     }
 
     .flex4-item-1 {
@@ -399,22 +468,22 @@
         margin-bottom: 30px;
         border-top: 20px;
     }
-
-    .flex4-item-2 {
-        margin-right: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
+    
     .flex4-item-1 h3 {
         font-size: 20pt;
         padding-top: 0.5em;
     }
 
-    .flex4-item-2 p{
-        font-size:15pt;
-        padding:1.5rem;
-        margin-top: 20px;
+    .flex4-item-2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #result-description {
+        font-size: 10pt;
+        padding: 1.5rem;
+        padding-top: 40px;
+        width: 100%;
     }
     
     .contain-result {
@@ -424,22 +493,15 @@
         height: 210px;
         margin: 0.7rem;
         background-color: white;
-        border-radius: 5px;
+        border-radius: 8px;
         display: block;
         margin-left: 10%;
-    }
-
-    #result-description {
-        text-align: center;
-        font-size: 13px;
-        width: 100%;
-        margin-left: 4%;
     }
 
     .progress-bar-container {
        margin-top: 30px;
        margin-left: 5px;
-       margin-right:5px;
+       margin-right: 5px;
     }
 
     div#moderate-high.progress-bar {
@@ -481,7 +543,7 @@
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
         border-bottom: 15px solid transparent;
-        margin-left: 47vw;
+        margin-left: 45.5vw;
         animation-duration: 2.5s;
         animation-name: slidein;
         animation-iteration-count: 1;
@@ -534,8 +596,8 @@
         position: relative;
         background: white;
         color: #202d45;
-        top: -10px;
-        left: -10px;
+        top: -12px;
+        left: -30px;
         border: 1px solid lightgray;
         font-weight: 600;
     }
@@ -638,6 +700,11 @@
         color: #454445;        
         text-align: center;        
     }
+    
+    .row, .result {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
     /*<---------------------------------------Menu------------------------------>*/
     #menu li a, #menu li span {        
@@ -657,6 +724,7 @@
     /*<-------------------------Activity Center------------------------------>*/
     .form-inline {
         width: 100%;
+        justify-content: center;
     }
 
     .btn-group {
@@ -664,76 +732,54 @@
         position: relative;
         transform-origin: 0;
         transform: scale(1);
-    }
-
-    .btn-rounded {
-        background-color: #475a7b;        
-        margin-left: 1%;        
-        width: 50px;        
-        height: 40px;        
-        margin-bottom: 8px;        
-    }        
-        
-    .btn-rounded:hover {        
-        background-color: #202d45;        
-    }        
-            
-    .searchbox {        
-        width: 90%;        
-        height: 40px;        
-        margin-bottom: 7px;      
-        border-color: #475a7b;        
-        border-radius: 0.3rem;
-        margin-left:0;
-    }        
-
-    .search-icon {        
-        width: 20px;        
-        height: 20px;
-    } 
+    }          
 
     .activityList {        
         background-color: lightgrey;
         height: auto;   
         width: 100%;     
         padding:0; 
-        margin-left:0;  
-        border-radius: 5px;    
-    }
-    
-    .flex-activity-item {      
-        margin-left: 6%;
-        margin-right: auto;
+        border-radius: 8px;    
     }
 
     .list-container {        
         padding: 0.5em;  
-        width:100%;    
-        margin-left: 2.5%; 
-    }    
+        width: 100%;
+        justify-content: center;
+        align-content:center;
+    }
 
+    .menuButton {
+        background-color: #475a7b;  
+        border-color: #475a7b;
+        border-style: solid;
+        color: white;
+        font-size: 88%;
+        height: 40px;
+        width: 20%;
+    }
+    
     /*<-------------------------My Activity----------------------------->*/
     .dropzone {
         background-color: lightgrey;
         height: auto;
-        width: 98%;
-        margin-left: 2%;
+        width: 100%;
         margin-bottom: 20px;
         margin-top: 10px;        
-        border-radius: 5px;  
+        border-radius: 8px;  
         align-content: center;
     }
 
     .flex-my-activity-item {
-        width: 90%;
+        width: 95%;
         height: 120px;
         margin: 0.7rem;
         display: block;
         margin-left: 0;
     }
 
-    #calculate {
-        margin-left: 2%;
+    .calculator-row {
+        width: 95%;
     }
 
     /*<-------------------------Result-------------------------------------->*/
@@ -741,15 +787,13 @@
     .result {
         background-color: lightgrey;
         height: 275px;
-        width: 97%;
-        border-radius: 5px;
+        border-radius: 8px;
         margin-top: 15px;
         margin-bottom: 50px;
-        margin-left: 1.5%;
     }
 
     #result-description {
-        font-size: 9pt;
+        padding: 1em;
     }
 
     .arrow-up {
@@ -758,7 +802,7 @@
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
         border-bottom: 15px solid transparent;
-        margin-left: 38vw;
+        margin-left: 35.5vw;
         animation-duration: 2.5s;
         animation-name: slidein;
         animation-iteration-count: 1;
@@ -773,16 +817,8 @@
         height: 210px;
         margin: 0.7rem;
         background-color: white;
-        border-radius: 5px;
+        border-radius: 8px;
         display: block;
-        margin-left: 5%;
-    }
-
-    p#result-descriptions {
-        text-align: center;
-        font-size: 12px;
-        width: 100%;
-        padding-bottom:0;
     }
 
     div#moderate-high.progress-bar {
@@ -862,44 +898,29 @@
     p {        
         font-size: 11pt;  
         width: 100%;      
-    }      
+    }
+
+    .row, .result {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
     /*<-------------------------Activity Center------------------------------>*/
     .categorylink {        
         color: white;        
     }        
         
-    /*<-------Search Box-------->*/        
-    .btn-rounded {        
-        background-color: #475a7b;        
-        margin-left: 10px;        
-        width: 55px;        
-        height: 20;        
-        margin-bottom: 8px;        
-        align-content: right;        
-    }        
-        
-    .btn-rounded:hover {        
-        background-color: #202d45;        
-    }        
-            
-    .searchbox {        
-        width: 88%;        
-        height: 40px;        
-        margin-bottom: 7px;        
-        border-color: #475a7b;        
-        border-radius: 0.3rem;        
-    }        
-    .search-icon {        
-        width: 30px;        
-        height: 30px;        
-    }        
-        
+    /*<-------Search Box-------->*/                    
+    .form-inline {
+        width: 100%;
+        justify-content: center;
+    }
+    
     /*<-------Category Selection-------->*/        
     .btn-default {        
         background-color: #475a7b;        
         color: white;    
-    }        
+    }
             
     .active {        
         background-color: #202d45 !important;        
@@ -922,23 +943,72 @@
         height: 308px;        
         margin-bottom: 50px;
         margin-top: 10px;        
-        border-radius: 5px;        
+        border-radius: 8px;        
     }        
-        
-    .flex-activity-item {        
-        margin-left: auto;
-        margin-right: auto;
+    
+    .menuButton {        
+        background-color: #475a7b;  
+        border-color: #475a7b;
+        border-style: solid;
+        color: white;
+        font-size: 90%;
+        height: 40px;
+        width: 20%;
+    }
+
+    .flex-activity-item{
+        width: 90%;
     }
 
     /*<-------------------------My Activity------------------------------>*/
+    .list-container {        
+        justify-content: center;
+        align-content:center;
+    }  
+
     .dropzone {
         background-color: lightgrey;
         height: 300px;
-        border-radius: 5px;
+        border-radius: 8px;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
+    .my-activity-row {
+        width: 100%;
+        justify-content: center;
+        align-content:center;
+        margin-right:0;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+
+    ::-webkit-scrollbar-thumb {
+        background: #475a7b;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+
     .flex-my-activity-item {
-        margin-left: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+        width: 90%;
+        height: 125px;
+        margin: 0.5rem;
+        background-color: white;
+        border-radius: 8px;
+        display: block;
+        justify-content: center;
     }
 
     p.calculation-description {
@@ -960,41 +1030,52 @@
         width: 95px;
     }
 
-    div.col-3.icon{
-        padding:0;
+    div.col-3.icon {
+        padding: 0;
     }
 
+    .flex3-item-1 {
+        margin-left: 15px;
+    }
+
+
     /*<-------------------------Result------------------------------>*/
+    .progress-bar-container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
     div#moderate-high.progress-bar {
-        font-size:12px !important;
+        font-size: 12px !important;
     }
  
     div#moderate.progress-bar {
-        font-size:12px !important;
+        font-size: 12px !important;
     }
  
     div#high.progress-bar {
-        font-size:12px !important;
+        font-size: 12px !important;
     }
  
     div#low.progress-bar {
-        font-size:12px !important;
+        font-size: 12px !important;
     }
  
     div#low-moderate.progress-bar {
-        font-size:12px !important;
+        font-size: 12px !important;
     }
 
     .progress {
-        font-size:12px !important;
+        font-size: 12px !important;
     }
     
     .arrow-up {
-        margin-left: 39vw;
+        margin-left: 37.5vw;
     }
 
     #result-description {
         font-size: 12pt;
+        padding-top: 40px;
     }
     
     /*<-------------------------About Page-------------------------------------->*/
