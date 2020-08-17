@@ -124,13 +124,13 @@
         color: rgb(209, 206, 206);
     }
 
-    #close {
+    .close {
         text-align: center;
-        height: 1.65em;
-        width: 1.65em;
+        height: 1.15em;
+        width: 1.15em;
         border-radius: 50px;
         position: relative;
-        background: white;
+        background-color: white;
         color: #202d45;
         top: -12px;
         left: -30px;
@@ -138,7 +138,7 @@
         font-weight: 600;
     }
 
-    #close:hover {
+    .close:hover {
         background-color: #202d45;
         color: white;
         cursor: pointer;
@@ -352,7 +352,7 @@
         border-radius: 8px;
     }
 
-    #pg2 {
+    #pg2-1, #pg2-2 {
         align-content: center;
         align-items: center;
         width: 100%;
@@ -526,37 +526,42 @@
     }
 
     .progress-bar-container {
-       margin-top: 30px;
-       margin-left: 5px;
-       margin-right: 5px;
+        margin-top: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     div#moderate-high.progress-bar {
-       background-color: #f56733 !important;
-       height: 30px !important;
-       font-size:7px !important;
+        background-color: #f56733 !important;
+        height: 30px !important;
+        font-size:7px !important;
+        width: 20%;
     }
 
     div#moderate.progress-bar {
-       background-color: orange !important;
-       height: 30px !important;
-       font-size:7px !important;
+        background-color: orange !important;
+        height: 30px !important;
+        font-size:7px !important;
+        width: 20%;
     }
 
     div#high.progress-bar {
         height: 30px !important;
         font-size:7px !important;
+        width: 20%;
     }
 
     div#low.progress-bar {
         height: 30px !important;
         background-color: #63a64d !important;
         font-size:7px !important;
+        width: 20%;
     }
 
     div#low-moderate.progress-bar {
         height: 30px !important;
         font-size:7px !important;
+        width: 20%;
     }
 
     .progress{
