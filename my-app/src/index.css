@@ -163,7 +163,7 @@ code {
       position: relative;
       padding-bottom: 4em;
       padding-top: 4em;
-      background-image: url("../public/Calculator-bg.jpg");
+      /* background-image: url("../public/Calculator-bg.jpg"); */
       background-position: bottom;
       background-size: cover;
       text-align: center;

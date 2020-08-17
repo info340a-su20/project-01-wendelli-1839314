@@ -2,24 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './Header.js';
+import Introduction from './Introduction.js';
+import ActivityCenter from './ActivityCenter.js';
 
 function App() {
+
   return (
     <div className="App">
-      <Header />      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+      <Header />
+      <Introduction />
+      <ActivityCenter />
     </div>
   );
 }
@@ -30,11 +22,11 @@ window.onload = function() {
 }
 
 // activity center Menu Bar
-var housekeepingActivity = document.getElementsByClassName("housekeeping");
-var jobActivity = document.getElementsByClassName("job");
-var transportationActivity = document.getElementsByClassName("transportation");
-var entertainmentActivity = document.getElementsByClassName("entertainment");
-var miscellaneousActivity = document.getElementsByClassName("miscellaneous");
+let housekeepingActivity = document.getElementsByClassName("housekeeping");
+let jobActivity = document.getElementsByClassName("job");
+let transportationActivity = document.getElementsByClassName("transportation");
+let entertainmentActivity = document.getElementsByClassName("entertainment");
+let miscellaneousActivity = document.getElementsByClassName("miscellaneous");
 
 function showOrHide(category, showOrHide) {
   for (let i = 0; i < category.length; i++) {
@@ -52,17 +44,18 @@ function hideAllCategory() {
   showOrHide(transportationActivity, false);
   showOrHide(entertainmentActivity, false);
   showOrHide(miscellaneousActivity, false);
-  document.getElementById("option1").style.backgroundColor = "#475a7b";
-  document.getElementById("option2").style.backgroundColor = "#475a7b";
-  document.getElementById("option3").style.backgroundColor = "#475a7b";
-  document.getElementById("option4").style.backgroundColor = "#475a7b";
-  document.getElementById("option5").style.backgroundColor = "#475a7b";
+  // document.getElementById("option1").style.backgroundColor = "#475a7b";
+  // document.getElementById("option2").style.backgroundColor = "#475a7b";
+  // document.getElementById("option3").style.backgroundColor = "#475a7b";
+  // document.getElementById("option4").style.backgroundColor = "#475a7b";
+  // document.getElementById("option5").style.backgroundColor = "#475a7b";
 }
 
 function displayHousekeeping() {
   hideAllCategory();
   showOrHide(housekeepingActivity, true);
-  document.getElementById("option1").style.backgroundColor = "#202d45";
+  console.log("hihihihihihihihi");
+  // document.getElementById("option1").style.backgroundColor = "#202d45";
 }
 
 function displayJob() {
