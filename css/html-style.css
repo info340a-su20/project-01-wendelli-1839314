@@ -599,7 +599,7 @@
     }
 
     /*<-------------------------About Page------------------------------>*/
-    #profile {
+    .profile {
         height: 12em;
         width: 12em;
         background-repeat: no-repeat;
@@ -608,12 +608,12 @@
         margin-bottom: 15px;
     }
 
-    #name {
+    .name {
         margin-bottom: 10px;
         font-size: 20pt;
     }
 
-    #list {
+    .list {
         font-size: 13pt;
     }
 
@@ -623,7 +623,7 @@
         margin-top: 0.3em;
     }
 
-    #social {
+    .contact {
         height: 30px;
         width: 30px;
         margin-bottom: 15px;
@@ -866,10 +866,6 @@
         padding-bottom: 0;
         margin-left: 0;
         width: 100%;
-    }
-
-    #list {
-        font-size: 13pt;
     }
 
     /*<----------------------------Additional Menu Items------------------------------>*/
