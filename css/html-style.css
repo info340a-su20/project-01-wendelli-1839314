@@ -917,21 +917,6 @@
     }
 
     /*<-------Category Selection-------->*/
-    .btn-default {
-        background-color: #475a7b;
-        color: white;
-    }
-
-    .active {
-        background-color: #202d45 !important;
-        color: white;
-    }
-
-    .btn-default:hover {
-        background-color: #202d45 !important;
-        color: white;
-    }
-
     .activityList {
         background-color: lightgrey;
         height: 308px;
