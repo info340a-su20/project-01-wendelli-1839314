@@ -13,6 +13,7 @@ class ActivityCenter extends Component {
     this.state = {
       category: 0,
       button: true,
+      mySearch:""
     };
   }
 
@@ -20,7 +21,7 @@ class ActivityCenter extends Component {
     this.setState({
       category: index,
     });
-  };
+  }
 
   displayCards = (col) => {
     const { category } = this.state;
@@ -47,7 +48,7 @@ class ActivityCenter extends Component {
           ))}
       </section>
     );
-  };
+  }
 
   render() {
     const { button, category } = this.state;
@@ -80,7 +81,7 @@ class ActivityCenter extends Component {
             <div className="list-container">
               <div className="row" id="allRows">
                 {["left", "right"].map((col, index) => (
-                  <div className="col-auto d-flex">
+                  <div className="col-auto d-flex" key={index}>
                     {this.displayCards(index)}
                   </div>
                 ))}

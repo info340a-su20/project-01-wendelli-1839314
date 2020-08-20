@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import MyActivities from "../MyActivities.js";
 
 export let selectedCards = [1];
 

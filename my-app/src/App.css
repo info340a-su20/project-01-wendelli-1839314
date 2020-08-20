@@ -229,6 +229,7 @@
       display: inline-block;
       text-align: center;
       width: 49%;
+      cursor: pointer;
   }
 
   #menu .current_page_item {
@@ -667,29 +668,34 @@
       margin-top: 30px;
       margin-bottom: 30px;
       width: 100%;
-      margin-left: 0;
+      justify-content: center;
   }
 
   .flex-item-5 {
       margin-top: 30px;
       margin-bottom: 30px;
       width: 100%;
-      margin-left: 0;
+      justify-content: center;
   }
 
   .flex-item-6 {
       margin-top: 30px;
       margin-bottom: 30px;
       width: 100%;
-      margin-left: 0;
+      justify-content: center;
+  }
+
+  .info {
+      justify-content: center;
+      align-content: center;
   }
 
   /*<-------------------------Additional Menu Items------------------------------>*/
-  #menu li a, #menu li span {
-      display: block;
+  #menu li {
+      display: inline-block;
       outline: none;
       letter-spacing: 0.20em;
-      width: 100%;
+      width: 40%;
       line-height: 57px;
       text-decoration: none;
       font-size: 1em;
@@ -699,8 +705,7 @@
   }
 
   #menu li:hover a,
-  #menu li.active a,
-  #menu li.active span {
+  #menu li.active a {
       background: #202d45;
       color: #FFF;
   }
@@ -907,16 +912,13 @@
   }
 
   /*<----------------------------Additional Menu Items------------------------------>*/
-  #menu li a, #menu li span {
-      display: block;
+  #menu li {
       letter-spacing: 0.20em;
-      width: 100%;
-      line-height: 60px;
-      text-decoration: none;
+      width: 40%;
+      line-height: 59px;
       font-size: 1.2em;
   }
 }
-
 
 /*********************************************************************************/
 /* media 1200px                                                                  */
@@ -1113,16 +1115,13 @@
   /*<-------------------------About Page-------------------------------------->*/
   .flex-item-4 {
       padding: 0;
-      margin-left: 40%;
   }
 
   .flex-item-5 {
       padding: 0;
-      margin-left: 40%;
   }
 
   .flex-item-6 {
       padding: 0;
-      margin-left: 40%;
   }
 }

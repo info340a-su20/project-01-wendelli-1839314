@@ -657,7 +657,7 @@ code {
     }
 
     /*<-------------------------Additional Menu Items------------------------------>*/
-    #menu li a, #menu li span {
+    #menu li, #menu li span {
         display: block;
         outline: none;
         letter-spacing: 0.20em;
@@ -670,8 +670,8 @@ code {
         color: #FFF;
     }
 
-    #menu li:hover a,
-    #menu li.active a,
+    #menu li:hover,
+    #menu li.active,
     #menu li.active span {
         background: #202d45;
         color: #FFF;
@@ -875,7 +875,7 @@ code {
     }
 
     /*<----------------------------Additional Menu Items------------------------------>*/
-    #menu li a, #menu li span {
+    #menu li, #menu li span {
         display: block;
         letter-spacing: 0.20em;
         width: 100%;

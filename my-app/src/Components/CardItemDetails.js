@@ -2,6 +2,28 @@ import React, { Component } from "react";
 import { hours } from "../Constants/hours";
 
 class CardItemDetails extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      selectedOption: true,
+      selectedValue: "0-1 hour"
+    };
+    this.handleChangeDropdown = this.handleChangeDropdown.bind(this);
+  }
+
+  onChangeRadioButton = () => {
+    this.setState({
+      selectedOption: !this.state.selectedOption
+    });
+    console.log(!this.state.selectedOption);
+  }
+
+  handleChangeDropdown = (event) => {
+    this.setState({selectedValue: event.target.value});
+    console.log(event.target.value);
+  }
+
   render() {
     const { imageAlt, imageSrc, index, name, onClick } = this.props;
     return (
@@ -22,15 +44,15 @@ class CardItemDetails extends Component {
         <form>
           <div className="card-radio-button">
             <label>Wear Mask?</label>
-            <input type="radio" value="mask-yes" name="yes_no" /> Yes
-            <input type="radio" value="mask-no" name="yes_no" /> No
+            <input type="radio" value="mask-yes" name="yes_no" defaultChecked={this.state.selectedOption === true} onClick={this.onChangeRadioButton}/> Yes
+            <input type="radio" value="mask-no" name="yes_no" defaultChecked={this.state.selectedOption === false} onClick={this.onChangeRadioButton}/> No
           </div>
         </form>
         <div className="card-select-box">
           <label>Duration?</label>
-          <select name="duration">
+          <select name="duration" value={this.state.selectedValue} onChange={this.handleChangeDropdown}>
             {hours.map((hour, index) => (
-              <option value={index}>{hour}</option>
+              <option key={index} value={index}>{hour}</option>
             ))}
           </select>
         </div>

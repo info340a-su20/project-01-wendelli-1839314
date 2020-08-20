@@ -5,6 +5,7 @@ import { cardListLeft, cardListRight } from "./Constants/cards";
 const cards = [...cardListLeft, ...cardListRight];
 
 export class MyActivities extends Component {
+
   constructor(props) {
     super(props);
 
@@ -32,7 +33,7 @@ export class MyActivities extends Component {
                       .filter(
                         (card) =>
                           cardIndices.indexOf(card.index) !== -1 &&
-                          cardIndices.indexOf(card.index) % 2 == 0
+                          cardIndices.indexOf(card.index) % 2 === 0
                       )
                       .map((card, index) => (
                         <CardItemDetails
@@ -53,7 +54,7 @@ export class MyActivities extends Component {
                       .filter(
                         (card) =>
                           cardIndices.indexOf(card.index) !== -1 &&
-                          cardIndices.indexOf(card.index) % 2 == 1
+                          cardIndices.indexOf(card.index) % 2 === 1
                       )
                       .map((card, index) => (
                         <CardItemDetails
