@@ -2,27 +2,28 @@ import React, { Component } from "react";
 import ActivityCenter from "./ActivityCenter.js";
 import MyActivities from "./MyActivities.js";
 
+
 class ActivitiesSection extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      cardsInMyActivities: [],
+      cardsInMyActivities: []
     };
   }
 
-  addToMyActivities = (index) => {
+  addToMyActivities = (newCard) => {
     this.setState({
-      cardsInMyActivities: [...this.state.cardsInMyActivities, index],
-    });
+      cardsInMyActivities: [...this.state.cardsInMyActivities, newCard],
+    }, console.log(this.state.cardsInMyActivities));
   };
 
-  removeFromMyActivities = (index) => {
+  removeFromMyActivities = (newCard) => {
     this.setState({
       cardsInMyActivities: [
-        ...this.state.cardsInMyActivities.filter((i) => i !== index),
+        ...this.state.cardsInMyActivities.filter(card => card.number !== newCard.number),
       ],
-    });
+    }, console.log(this.state.cardsInMyActivities));
   };
 
   render() {
@@ -32,11 +33,11 @@ class ActivitiesSection extends Component {
         <div className="row">
           <ActivityCenter
             onCardClicked={this.addToMyActivities}
-            cardIndices={cardsInMyActivities}
+            chosenCards={cardsInMyActivities}
           />
           <MyActivities
             onCardClicked={this.removeFromMyActivities}
-            cardIndices={cardsInMyActivities}
+            chosenCards={cardsInMyActivities}
           />
         </div>
       </div>

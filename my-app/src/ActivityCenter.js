@@ -12,8 +12,7 @@ class ActivityCenter extends Component {
 
     this.state = {
       category: 0,
-      button: true,
-      mySearch:""
+      button: true
     };
   }
 
@@ -25,8 +24,9 @@ class ActivityCenter extends Component {
 
   displayCards = (col) => {
     const { category } = this.state;
-    const { onCardClicked, cardIndices } = this.props;
+    const { onCardClicked, chosenCards } = this.props;
     const cards = col === 0 ? cardListLeft : cardListRight;
+    const cardsNumbers = chosenCards.map(card => card.number);
 
     return (
       <section>
@@ -34,16 +34,16 @@ class ActivityCenter extends Component {
           .filter(
             (card) => categoriesLowerCased.indexOf(card.category) === category
           )
-          .map((card, index) => (
+          .map((card) => (
             <CardItem
-              key={index}
+              key={card.name}
               category={card.category}
               name={card.name}
               imageSrc={card.imageSrc}
               imageAlt={card.imageAlt}
-              index={card.index}
+              number={card.number}
               onClick={onCardClicked}
-              isClicked={cardIndices.indexOf(card.index) !== -1}
+              isClicked={cardsNumbers.indexOf(card.number) !== -1}
             />
           ))}
       </section>
@@ -80,11 +80,12 @@ class ActivityCenter extends Component {
           <div className="activityList">
             <div className="list-container">
               <div className="row" id="allRows">
-                {["left", "right"].map((col, index) => (
-                  <div className="col-auto d-flex" key={index}>
-                    {this.displayCards(index)}
-                  </div>
-                ))}
+              <div className="col-auto d-flex" key={0}>
+                {this.displayCards(0)}
+              </div>
+              <div className="col-auto d-flex" key={1}>
+                {this.displayCards(1)}
+              </div>
               </div>
             </div>
           </div>

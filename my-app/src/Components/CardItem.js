@@ -16,12 +16,17 @@ class CardItem extends Component {
     const {
       category,
       name,
-      index,
+      number,
       imageSrc,
       imageAlt,
       isClicked,
       onClick,
     } = this.props;
+
+    const card = {
+      name,
+      number
+    }
 
     return (
       <div
@@ -29,7 +34,7 @@ class CardItem extends Component {
           button ? "buttonTrue" : "buttonFalse"
         }`}
         role="button"
-        onClick={() => onClick(index)}
+        onClick={() => onClick(card)}
         style={{ backgroundColor: isClicked ? "lightgrey" : "" }}>
         <div tabIndex="0" className="row">
           <div className="col-1 icon">

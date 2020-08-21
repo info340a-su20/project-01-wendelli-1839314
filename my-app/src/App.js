@@ -7,7 +7,6 @@ import Result from './Result.js';
 import AboutUs from './AboutUs.js';
 import Footer from './Footer.js';
 
-
 class App extends Component {
     constructor(props) {
         super(props);

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { cardListLeft, cardListRight } from "../Constants/cards";
 
-const cardList = [...cardListLeft, ...cardListRight];
+const cards = [...cardListLeft, ...cardListRight];
 var cardNames = [];
-for (var i = 0; i < cardList.length; i++) {
-    cardNames[i] = cardList[i].name;
+for (var i = 0; i < cards.length; i++) {
+    cardNames[i] = cards[i].name;
 }
 
 class SearchBar extends Component {
