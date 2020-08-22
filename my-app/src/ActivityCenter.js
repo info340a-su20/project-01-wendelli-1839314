@@ -12,7 +12,7 @@ class ActivityCenter extends Component {
 
     this.state = {
       category: 0,
-      button: true
+      button: true,
     };
   }
 
@@ -20,13 +20,13 @@ class ActivityCenter extends Component {
     this.setState({
       category: index,
     });
-  }
+  };
 
   displayCards = (col) => {
     const { category } = this.state;
     const { onCardClicked, chosenCards } = this.props;
     const cards = col === 0 ? cardListLeft : cardListRight;
-    const cardsNumbers = chosenCards.map(card => card.number);
+    const cardsNumbers = chosenCards.map((card) => card.number);
 
     return (
       <section>
@@ -48,7 +48,7 @@ class ActivityCenter extends Component {
           ))}
       </section>
     );
-  }
+  };
 
   render() {
     const { button, category } = this.state;
@@ -80,12 +80,12 @@ class ActivityCenter extends Component {
           <div className="activityList">
             <div className="list-container">
               <div className="row" id="allRows">
-              <div className="col-auto d-flex" key={0}>
-                {this.displayCards(0)}
-              </div>
-              <div className="col-auto d-flex" key={1}>
-                {this.displayCards(1)}
-              </div>
+                <div className="col-auto d-flex" key={0}>
+                  {this.displayCards(0)}
+                </div>
+                <div className="col-auto d-flex" key={1}>
+                  {this.displayCards(1)}
+                </div>
               </div>
             </div>
           </div>

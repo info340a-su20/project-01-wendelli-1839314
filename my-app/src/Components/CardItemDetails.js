@@ -2,41 +2,53 @@ import React, { Component } from "react";
 import { hours } from "../Constants/hours";
 
 export class CardItemDetails extends Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
 
+    const { name, number } = this.props;
+
     this.state = {
-      maskOn: true,
-      activityDuration: hours[0]
+      card: {
+        name,
+        number,
+        maskOn: true,
+        activityDuration: 0,
+      },
     };
   }
 
+  onChangeRadioButton = (value) => {
+    const { card } = this.state;
 
-  onChangeRadioButton = () => {
-    this.setState({
-      maskOn: !this.state.maskOn
-    });
-  }
+    if (value !== card.maskOn) {
+      this.setState(
+        {
+          card: { ...card, maskOn: value },
+        },
+        () => this.props.onUpdateCard(this.state.card)
+      );
+    }
+  };
 
   handleChangeDropdown = (event) => {
-    this.setState({activityDuration: event.target.value});
-  }
+    const duration = parseInt(event.target.value);
+    const { card } = this.state;
+
+    if (duration !== card.activityDuration) {
+      this.setState({ card: { ...card, activityDuration: duration } }, 
+        () => this.props.onUpdateCard(this.state.card)
+      );
+    }
+  };
 
   render() {
-    const { maskOn, activityDuration } = this.state;
-    const { imageAlt, imageSrc, number, name, onClick} = this.props;
-    const card = {
-      name,
-      number,
-      maskOn,
-      activityDuration
-    };
+    const { card } = this.state;
+    const { imageAlt, imageSrc, name, onDeleteCard } = this.props;
 
     return (
       <div className="flex-my-activity-item" role="form">
         <div className="row">
-          <div onClick={() => onClick(card)}>
+          <div onClick={() => onDeleteCard(card)}>
             <div className="close" role="button" aria-label="Close">
               ×
             </div>
@@ -51,15 +63,33 @@ export class CardItemDetails extends Component {
         <form>
           <div className="card-radio-button">
             <label>Wear Mask?</label>
-            <input type="radio" value="mask-yes" name="yes_no" defaultChecked={true} onClick={this.onChangeRadioButton}/> Yes
-            <input type="radio" value="mask-no" name="yes_no" onClick={this.onChangeRadioButton}/> No
+            <input
+              type="radio"
+              id="mask_on"
+              name="yes_no"
+              defaultChecked={true}
+              onChange={() => this.onChangeRadioButton(true)}
+            />{" "}
+            Yes
+            <input
+              type="radio"
+              id="mask_off"
+              name="yes_no"
+              onChange={() => this.onChangeRadioButton(false)}
+            />{" "}
+            No
           </div>
         </form>
         <div className="card-select-box">
           <label>Duration?</label>
-          <select name="duration" value={activityDuration} onChange={this.handleChangeDropdown}>
+          <select
+            name="duration"
+            value={card.activityDuration}
+            onChange={(event) => this.handleChangeDropdown(event)}>
             {hours.map((hour, index) => (
-              <option key={index} value={index}>{hour}</option>
+              <option key={index} value={index}>
+                {hour}
+              </option>
             ))}
           </select>
         </div>
@@ -83,7 +113,6 @@ export default CardItemDetails;
 //       activityDuration: hours[0]
 //     };
 //   }
-
 
 //   onChangeRadioButton = () => {
 //     this.setState({
@@ -141,4 +170,3 @@ export default CardItemDetails;
 // }
 
 // export default CardItemDetails;
-

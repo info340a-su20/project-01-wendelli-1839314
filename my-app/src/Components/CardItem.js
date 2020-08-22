@@ -25,8 +25,10 @@ class CardItem extends Component {
 
     const card = {
       name,
-      number
-    }
+      number,
+      maskOn: true,
+      activityDuration: 0,
+    };
 
     return (
       <div
