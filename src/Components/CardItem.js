@@ -29,7 +29,7 @@ class CardItem extends Component {
       maskOn: true,
       activityDuration: 0,
       imageSrc,
-      imageAlt
+      imageAlt,
     };
 
     return (
@@ -42,7 +42,10 @@ class CardItem extends Component {
         style={{ backgroundColor: isClicked ? "lightgrey" : "" }}>
         <div tabIndex="0" className="row">
           <div className="col-1 icon">
-            <img src={imageSrc} alt={imageAlt} className="activityIcon"></img>
+            <img
+              src={`${process.env.PUBLIC_URL}${imageSrc}`}
+              alt={imageAlt}
+              className="activityIcon"></img>
           </div>
           <div className="col">
             <h3>{name}</h3>

@@ -9,7 +9,7 @@ export const cardListLeft = [
   {
     category: "housekeeping",
     name: "Grocery Shopping",
-    imageSrc: "icons/shopping.png",
+    imageSrc: "/icons/shopping.png",
     imageAlt: "shopping",
     number: 1,
   },
