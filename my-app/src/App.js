@@ -3,7 +3,6 @@ import './App.css';
 import Header from './Header.js';
 import Introduction from './Introduction.js';
 import ActivitiesSection from './ActivitiesSection.js';
-import Result from './Result.js';
 import AboutUs from './AboutUs.js';
 import Footer from './Footer.js';
 
@@ -29,7 +28,6 @@ class App extends Component {
                 <div>
                     <Introduction />
                     <ActivitiesSection />
-                    <Result />
                 </div>
             );
         } else {
@@ -47,4 +45,3 @@ class App extends Component {
 }
 
 export default App;
-// onAboutClicked={this.choosePage}

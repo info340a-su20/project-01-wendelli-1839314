@@ -1,111 +1,44 @@
 import React, {Component} from 'react';
-import AnimateBox from './Components/AnimateBox.js';
+import { riskInfo } from './Constants/riskInfo';
 
 class Result extends Component {
-
-    constructor(props) {
-        super(props);
-    
-        this.state = {
-            level: 0
-        };
-    }
-
     render() {
-        let displayLevel;
-        if (this.state.level === 0) {
-            displayLevel = (
-                <div className="row">
-                    <div className="col-sm col-md col-lg">
-                        <AnimateBox />
-                    </div>
-                    <div className="col-sm-12 col-md-4 col-lg-4">
-                        <div className="contain-result">
-                            <section className="flex4-item-2">
-                                <p id="result-description">
-                                    Your risk level is 'Low'. Great job on practicing social distancing and being responsible for you and others' health. Keep up the good work.
-                                </p>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            );
-        } else if (this.state.level === 1) {
-            displayLevel = (
-                <div className="row">
-                    <div className="col col-md">
-                        <AnimateBox />
-                    </div>
-                    <div className="col col-md-4">
-                        <div className="contain-result">
-                            <section className="flex4-item-2">
-                                <p id="result-description">
-                                    Your risk level is 'Low Moderate'. Nice work! Please keep practicing social distancing and minimizing unnecessary exposure whenever possible. 
-                                </p>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            );
-        } else if (this.state.level === 2) {
-            displayLevel = (
-                <div className="row">
-                    <div className="col col-md">
-                        <AnimateBox />
-                    </div>
-                    <div className="col col-md-4">
-                        <div className="contain-result">
-                            <section className="flex4-item-2">
-                                <p id="result-description">
-                                    Your risk level is 'Moderate'. Please take extra precautions while being outside, and avoid unnecessary outdoor activities whenever possible.
-                                </p>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            );
-        } else if (this.state.level === 3) {
-            displayLevel = (
-                <div className="row">
-                    <div className="col col-md">
-                        <AnimateBox />
-                    </div>
-                    <div className="col col-md-4">
-                        <div className="contain-result">
-                            <section className="flex4-item-2">
-                                <p id="result-description">
-                                    Your risk level is 'Moderate High'. A number of your daily activities can put your health on a high risk. Please practice social distancing!
-                                </p>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            );
-        } else {
-            displayLevel = (
-                <div className="row">
-                    <div className="col-auto col-sm-auto col-md-auto">
-                        <AnimateBox />
-                    </div>
-                    <div className="col-auto col-sm-auto col-md-auto">
-                        <div className="contain-result">
-                            <section className="flex4-item-2">
-                                <p id="result-description">
-                                    Your risk level is 'High'. Please try not to put yourself in risky places. Practice social distancing right away! Most importantly, wear a mask!
-                                </p>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            );
-        }
+        const { displayLevel } = this.props;
 
         return (
             <div className="flex-container" id="pg3">
                 <div>
                     <h2>Result</h2>
                     <div className="result">
-                        {displayLevel}
+                        <div className="row">
+                            <div className="col-sm col-md col-lg">
+                                <div className="contain-result">
+                                    <section className="flex4-item-1">
+                                        <h3 id="risk-level-title">Risk Level:</h3>
+                                        <h3 id="risk-level-low">{riskInfo[displayLevel].level}</h3>
+                                        <div className="progress-bar-container">
+                                            <div className="progress">
+                                                <div id="low" className="progress-bar bg-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Low</div>
+                                                <div id="low-moderate" className="progress-bar bg-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">Low moderate</div>
+                                                <div id="moderate" className="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Moderate</div>
+                                                <div id="moderate-high" className="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Moderate High</div>
+                                                <div id="high" className="progress-bar bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">High</div>
+                                            </div>
+                                        </div>
+                                        <div className={`arrow-up ${riskInfo[displayLevel].arrow}`} aria-label="arrow up"></div>
+                                    </section>
+                                </div>
+                            </div>
+                            <div className="col-sm-12 col-md-4 col-lg-4">
+                                <div className="contain-result">
+                                    <section className="flex4-item-2">
+                                        <p id="result-description">
+                                            {riskInfo[displayLevel].description}
+                                        </p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -28,6 +28,8 @@ class CardItem extends Component {
       number,
       maskOn: true,
       activityDuration: 0,
+      imageSrc,
+      imageAlt
     };
 
     return (

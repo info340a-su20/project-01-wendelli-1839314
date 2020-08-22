@@ -34,7 +34,6 @@ class Header extends Component {
                 </div>
                 <div id="menu">
                     <ul>
-                    {/* { backgroundColor: active ? "#202d45" : "" } */}
                         <li onClick = {() => { onAboutClicked(0); this.handleClick(0)}} style={{ backgroundColor: calActive ? "#202d45" : "" }}>Calculator</li>
                         <li onClick = {() => { onAboutClicked(1); this.handleClick(1)}} style={{ backgroundColor: aboutActive ? "#202d45" : "" }}>About Us</li>
                     </ul>

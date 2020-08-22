@@ -17,6 +17,7 @@ class AboutUs extends Component {
                                 <h2 className="name">Wendell Li</h2>
                                 <a
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     href="https://www.linkedin.com/in/wendellli99/"
                                     role="button"
                                     aria-label="LinkedIn"
@@ -27,6 +28,7 @@ class AboutUs extends Component {
                                 /></a>
                                 <a
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     href="https://www.facebook.com/profile.php?id=100005237762480/"
                                     role="button"
                                     aria-label="Facebook"
@@ -37,6 +39,7 @@ class AboutUs extends Component {
                                 /></a>
                                 <a
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     href="mailto:wendelli@uw.edu"
                                     role="button"
                                     aria-label="E-mail"
@@ -47,7 +50,7 @@ class AboutUs extends Component {
                                 /></a>
                                 <ul className="list">
                                     <li>UI/UX Designer</li>
-                                    <li>iOS App & Game Developer</li>
+                                    <li>iOS App Game Developer</li>
                                     <li>Student at the University of Washington</li>
                                     <li>Class of 2022</li>
                                 </ul>
@@ -63,6 +66,7 @@ class AboutUs extends Component {
                                 <h2 className="name">George Gu</h2>
                                 <a
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     href="https://www.linkedin.com/in/george-gu-1b4451161/"
                                     role="button"
                                     aria-label="LinkedIn"
@@ -73,6 +77,7 @@ class AboutUs extends Component {
                                 /></a>
                                 <a
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     href="https://www.facebook.com/liuyinqi.gu"
                                     role="button"
                                     aria-label="Facebook"
@@ -83,6 +88,7 @@ class AboutUs extends Component {
                                 /></a>
                                 <a
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     href="mailto:georgegu@uw.edu"
                                     role="button"
                                     aria-label="E-mail"
@@ -109,6 +115,7 @@ class AboutUs extends Component {
                                 <h2 className="name">Zexin Lyu</h2>
                                 <a
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     href="https://www.linkedin.com/in/zexin-lyu-5399201a6/"
                                     role="button"
                                     aria-label="LinkedIn"
@@ -119,6 +126,7 @@ class AboutUs extends Component {
                                 /></a>
                                 <a
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     href="https://www.facebook.com/profile.php?id=100005598017451"
                                     role="button"
                                     aria-label="Facebook"
@@ -129,6 +137,7 @@ class AboutUs extends Component {
                                 /></a>
                                 <a
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     href="mailto:zexinl@uw.edu"
                                     role="button"
                                     aria-label="E-mail"

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { cardListLeft, cardListRight } from "./Constants/cards";
 import { categories } from "./Constants/categories";
-import SearchBar from "./Components/SearchBar.js";
 import CardItem from "./Components/CardItem.js";
 
 const categoriesLowerCased = categories.map((c) => c.toLowerCase());
 
 class ActivityCenter extends Component {
+
   constructor(props) {
     super(props);
 
@@ -62,7 +62,6 @@ class ActivityCenter extends Component {
         <section className="flex2-item-1">
           <h2>Activity Center</h2>
           <p>Click the activity cards to add them to "My Activities".</p>
-          <SearchBar />
           <div
             className="btn-group btn-group-toggle"
             data-toggle="buttons"

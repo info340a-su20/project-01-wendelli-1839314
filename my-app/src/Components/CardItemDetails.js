@@ -5,14 +5,16 @@ export class CardItemDetails extends Component {
   constructor(props) {
     super(props);
 
-    const { name, number } = this.props;
+    const { name, number, imageAlt, imageSrc } = this.props;
 
     this.state = {
       card: {
         name,
         number,
+        imageSrc,
+        imageAlt,
         maskOn: true,
-        activityDuration: 0,
+        activityDuration: 0
       },
     };
   }
@@ -65,7 +67,7 @@ export class CardItemDetails extends Component {
             <label>Wear Mask?</label>
             <input
               type="radio"
-              id="mask_on"
+              // id="mask_on"
               name="yes_no"
               defaultChecked={true}
               onChange={() => this.onChangeRadioButton(true)}
@@ -73,7 +75,7 @@ export class CardItemDetails extends Component {
             Yes
             <input
               type="radio"
-              id="mask_off"
+              // id="mask_off"
               name="yes_no"
               onChange={() => this.onChangeRadioButton(false)}
             />{" "}

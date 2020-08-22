@@ -11,7 +11,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 /*********************************************************************************/
 /* Media 375px                                                                   */
 /*********************************************************************************/
@@ -492,9 +491,33 @@ code {
         padding-top: 25px;
     }
 
-    #risk-level-h {
+    #risk-level-low {
+        /* color should follow risk level color */
+        color: #63a64d;
+        margin-top: 10px;
+    }
+
+    #risk-level-low-moderate {
+        /* color should follow risk level color */
+        color: #ffc106;
+        margin-top: 10px;
+    }
+
+    #risk-level-moderate {
+        /* color should follow risk level color */
+        color: orange;
+        margin-top: 10px;
+    }
+
+    #risk-level-moderate-high {
         /* color should follow risk level color */
         color: #f56733;
+        margin-top: 10px;
+    }
+
+    #risk-level-high {
+        /* color should follow risk level color */
+        color: #dc3546;
         margin-top: 10px;
     }
 
@@ -577,21 +600,20 @@ code {
         font-size:7px !important;
     }
 
-    .arrow-up {
+    .lowRiskArrow {
         width: 0;
         height: 25;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
         border-bottom: 15px solid transparent;
-        margin-left: 45.5vw;
         animation-duration: 2.5s;
-        animation-name: slidein;
+        animation-name: slideinLow;
         animation-iteration-count: 1;
         animation-timing-function: ease-out;
         animation-fill-mode: forwards;
     }
 
-    @keyframes slidein {
+    @keyframes slideinLow {
         from {
           margin-left: 0%;
           width: 0;
@@ -599,10 +621,9 @@ code {
         }
 
         to {
-          margin-right: 100%;
+          margin-right: 25%;
           width: 0;
-          border-bottom: 15px solid #f56733;
-
+          border-bottom: 15px solid #63a64d;
         }
     }
 
@@ -658,12 +679,18 @@ code {
         margin-left: 0;
     }
 
+    .info {
+        justify-content: center;
+        align-content: center;
+    }
+
     /*<-------------------------Additional Menu Items------------------------------>*/
     #menu li, #menu li span {
-        display: block;
+        cursor: pointer;
+        display: inline-block;
         outline: none;
         letter-spacing: 0.20em;
-        width: 100%;
+        width: 50%;
         line-height: 57px;
         text-decoration: none;
         font-size: 1em;
@@ -806,20 +833,6 @@ code {
         padding: 1em;
     }
 
-    .arrow-up {
-        width: 0;
-        height: 25;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 15px solid transparent;
-        margin-left: 35.5vw;
-        animation-duration: 2.5s;
-        animation-name: slidein;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-out;
-        animation-fill-mode: forwards;
-    }
-
     .contain-result {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.2s;
@@ -878,9 +891,6 @@ code {
 
     /*<----------------------------Additional Menu Items------------------------------>*/
     #menu li, #menu li span {
-        display: block;
-        letter-spacing: 0.20em;
-        width: 100%;
         line-height: 60px;
         text-decoration: none;
         font-size: 1.2em;
@@ -1056,28 +1066,163 @@ code {
         font-size: 12px !important;
     }
 
-    .arrow-up {
-        margin-left: 37.5vw;
-    }
-
     #result-description {
         font-size: 12pt;
         padding-top: 40px;
     }
 
+    .lowRiskArrow {
+        width: 0;
+        height: 25;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        animation-duration: 2.5s;
+        animation-name: slideinLow;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slideinLow {
+        from {
+          margin-left: 0%;
+          margin-left:0;
+          width: 0;
+          border-bottom: 15px solid #63a64d;
+        }
+
+        to {
+          margin-right: 25%;
+          margin-left:14%;
+          width: 0;
+          border-bottom: 15px solid #63a64d;
+        }
+    }
+
+    .lowModerateRiskArrow {
+        width: 0;
+        height: 25;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        animation-duration: 2.5s;
+        animation-name: slideinlowM;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slideinlowM {
+        from {
+          margin-left: 0%;
+          margin-left:0;
+          width: 0;
+          border-bottom: 15px solid #63a64d;
+        }
+
+        to {
+          margin-right: 100%;
+          margin-left:32%;
+          width: 0;
+          border-bottom: 15px solid #ffc106;
+        }
+    }
+
+    .moderateRiskArrow {
+        width: 0;
+        height: 25;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        animation-duration: 2.5s;
+        animation-name: slideinMod;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slideinMod {
+        from {
+          margin-left: 0%;
+          margin-left:0;
+          width: 0;
+          border-bottom: 15px solid #63a64d;
+        }
+
+        to {
+          margin-right: 100%;
+          margin-left:49%;
+          width: 0;
+          border-bottom: 15px solid orange;
+        }
+    }
+    
+    .moderateHighRiskArrow {
+        width: 0;
+        height: 25;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        animation-duration: 2.5s;
+        animation-name: slideinModH;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slideinModH {
+        from {
+          margin-left: 0%;
+          width: 0;
+          border-bottom: 15px solid #63a64d;
+        }
+
+        to {
+          margin-right: 100%;
+          margin-left: 66.5%;
+          width: 0;
+          border-bottom: 15px solid #f56733;
+        }
+    }
+
+    .highRiskArrow {
+        width: 0;
+        height: 25;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        animation-duration: 2.5s;
+        animation-name: slideinH;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slideinH {
+        from {
+          margin-left: 0%;
+          width: 0;
+          border-bottom: 15px solid #63a64d;
+        }
+
+        to {
+          margin-right: 100%;
+          margin-left: 84%;
+          width: 0;
+          border-bottom: 15px solid #dc3546;
+        }
+    }
     /*<-------------------------About Page-------------------------------------->*/
     .flex-item-4 {
         padding: 0;
-        margin-left: 40%;
     }
 
     .flex-item-5 {
         padding: 0;
-        margin-left: 40%;
     }
 
     .flex-item-6 {
         padding: 0;
-        margin-left: 40%;
     }
 }
