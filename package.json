@@ -4,11 +4,15 @@
   "private": true,
   "description": "",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/info340a-su20/project-01-wendelli-1839314/tree/gh-pages",
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "jest-style-matchers": "^0.1.2"
   },
   "eslintConfig": {
