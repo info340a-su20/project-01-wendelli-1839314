@@ -15,7 +15,7 @@ class Result extends Component {
                                 <div className="contain-result">
                                     <section className="flex4-item-1">
                                         <h3 id="risk-level-title">Risk Level:</h3>
-                                        <h3 id="risk-level-low">{riskInfo[displayLevel].level}</h3>
+                                        <h3 id={riskInfo[displayLevel].levelColor}>{riskInfo[displayLevel].level}</h3>
                                         <div className="progress-bar-container">
                                             <div className="progress">
                                                 <div id="low" className="progress-bar bg-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Low</div>

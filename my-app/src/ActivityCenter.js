@@ -79,10 +79,10 @@ class ActivityCenter extends Component {
           <div className="activityList">
             <div className="list-container">
               <div className="row" id="allRows">
-                <div className="col-auto d-flex" key={0}>
+                <div className="col-auto col-xl-6 d-flex" key={0}>
                   {this.displayCards(0)}
                 </div>
-                <div className="col-auto d-flex" key={1}>
+                <div className="col-auto col-xl-6 d-flex" key={1}>
                   {this.displayCards(1)}
                 </div>
               </div>
