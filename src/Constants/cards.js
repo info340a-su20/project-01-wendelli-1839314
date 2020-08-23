@@ -79,7 +79,7 @@ export const cardListLeft = [
   {
     category: "transportation",
     name: "Subway",
-    imageSrc: "/icons/Subway.png",
+    imageSrc: "/icons/subway.png",
     imageAlt: "subway",
     number: 11,
   },
