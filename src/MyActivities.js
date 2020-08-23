@@ -3,7 +3,12 @@ import { CardItemDetails } from "./Components/CardItemDetails.js";
 
 export class MyActivities extends Component {
   render() {
-    const { onCardClicked, chosenCards, updateCard, calculateLevel } = this.props;
+    const {
+      onCardClicked,
+      chosenCards,
+      updateCard,
+      calculateLevel,
+    } = this.props;
 
     return (
       <div className="col" id="pg2-2">
@@ -20,16 +25,16 @@ export class MyActivities extends Component {
                 <div className="col-auto col-md-auto col-xl-auto d-flex">
                   <section className="flex3-item1-1">
                     {chosenCards.map((card) => (
-                        <CardItemDetails
-                          key={card.number}
-                          name={card.name}
-                          number={card.number}
-                          imageSrc={card.imageSrc}
-                          imageAlt={card.imageAlt}
-                          onDeleteCard={onCardClicked}
-                          onUpdateCard={updateCard}
-                        />
-                      ))}
+                      <CardItemDetails
+                        key={card.number}
+                        name={card.name}
+                        number={card.number}
+                        imageSrc={card.imageSrc}
+                        imageAlt={card.imageAlt}
+                        onDeleteCard={onCardClicked}
+                        onUpdateCard={updateCard}
+                      />
+                    ))}
                   </section>
                 </div>
               </div>
