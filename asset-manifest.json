@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/project-01-wendelli-1839314/static/css/main.7c259264.chunk.css",
-    "main.js": "/project-01-wendelli-1839314/static/js/main.eede44a9.chunk.js",
-    "main.js.map": "/project-01-wendelli-1839314/static/js/main.eede44a9.chunk.js.map",
+    "main.js": "/project-01-wendelli-1839314/static/js/main.eb93d46d.chunk.js",
+    "main.js.map": "/project-01-wendelli-1839314/static/js/main.eb93d46d.chunk.js.map",
     "runtime-main.js": "/project-01-wendelli-1839314/static/js/runtime-main.37580d2d.js",
     "runtime-main.js.map": "/project-01-wendelli-1839314/static/js/runtime-main.37580d2d.js.map",
     "static/js/2.221d4090.chunk.js": "/project-01-wendelli-1839314/static/js/2.221d4090.chunk.js",
     "static/js/2.221d4090.chunk.js.map": "/project-01-wendelli-1839314/static/js/2.221d4090.chunk.js.map",
     "index.html": "/project-01-wendelli-1839314/index.html",
-    "precache-manifest.e2222cf9109bdd5ee154fb6026da974e.js": "/project-01-wendelli-1839314/precache-manifest.e2222cf9109bdd5ee154fb6026da974e.js",
+    "precache-manifest.2c118441cce6fe6858d21bfa0a81105a.js": "/project-01-wendelli-1839314/precache-manifest.2c118441cce6fe6858d21bfa0a81105a.js",
     "service-worker.js": "/project-01-wendelli-1839314/service-worker.js",
     "static/css/main.7c259264.chunk.css.map": "/project-01-wendelli-1839314/static/css/main.7c259264.chunk.css.map",
     "static/js/2.221d4090.chunk.js.LICENSE.txt": "/project-01-wendelli-1839314/static/js/2.221d4090.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.37580d2d.js",
     "static/js/2.221d4090.chunk.js",
     "static/css/main.7c259264.chunk.css",
-    "static/js/main.eede44a9.chunk.js"
+    "static/js/main.eb93d46d.chunk.js"
   ]
 }
