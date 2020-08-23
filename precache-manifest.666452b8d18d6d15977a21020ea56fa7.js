@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f672b1fb5ac52fafc03b52fc9e3d91d",
+    "revision": "53ab65c1adef94370daa7e64c27d007e",
     "url": "/project-01-wendelli-1839314/index.html"
   },
   {
-    "revision": "9e0a5f3a82ed77d29f33",
+    "revision": "8452a6958db702b23ca1",
     "url": "/project-01-wendelli-1839314/static/css/main.7c259264.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/project-01-wendelli-1839314/static/js/2.221d4090.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9e0a5f3a82ed77d29f33",
-    "url": "/project-01-wendelli-1839314/static/js/main.eb93d46d.chunk.js"
+    "revision": "8452a6958db702b23ca1",
+    "url": "/project-01-wendelli-1839314/static/js/main.059e8b88.chunk.js"
   },
   {
     "revision": "4cfe44c6fea96895b518",
