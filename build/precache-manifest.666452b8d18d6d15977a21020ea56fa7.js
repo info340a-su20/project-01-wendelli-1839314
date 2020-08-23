@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3533893778d2219939087bb7789ce22d",
+    "revision": "53ab65c1adef94370daa7e64c27d007e",
     "url": "/project-01-wendelli-1839314/index.html"
   },
   {
-    "revision": "53e58ed7a47246fe3283",
-    "url": "/project-01-wendelli-1839314/static/css/main.ee10ea1f.chunk.css"
+    "revision": "8452a6958db702b23ca1",
+    "url": "/project-01-wendelli-1839314/static/css/main.7c259264.chunk.css"
   },
   {
-    "revision": "3c60fbd38f8a9963c760",
-    "url": "/project-01-wendelli-1839314/static/js/2.9ca91ddf.chunk.js"
+    "revision": "a429d56c68497261ade3",
+    "url": "/project-01-wendelli-1839314/static/js/2.221d4090.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/project-01-wendelli-1839314/static/js/2.9ca91ddf.chunk.js.LICENSE.txt"
+    "url": "/project-01-wendelli-1839314/static/js/2.221d4090.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "53e58ed7a47246fe3283",
-    "url": "/project-01-wendelli-1839314/static/js/main.41a09d8c.chunk.js"
+    "revision": "8452a6958db702b23ca1",
+    "url": "/project-01-wendelli-1839314/static/js/main.059e8b88.chunk.js"
   },
   {
     "revision": "4cfe44c6fea96895b518",
