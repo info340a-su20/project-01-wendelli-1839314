@@ -36,7 +36,7 @@ class ActivityCenter extends Component {
           )
           .map((card) => (
             <CardItem
-              key={card.name}
+              key={card.number}
               category={card.category}
               name={card.name}
               imageSrc={card.imageSrc}

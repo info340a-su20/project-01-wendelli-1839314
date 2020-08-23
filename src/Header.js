@@ -23,12 +23,12 @@ class Header extends Component {
         }
 
     }
-
+    //background-image: url({`${process.env.PUBLIC_URL}/Calculator-bg.jpg`});
     render() {
         const { onAboutClicked } = this.props;
         const {calActive, aboutActive} = this.state;
         return (
-            <div id="header">
+            <div id="header" style={{ background: `url(${process.env.PUBLIC_URL}/Calculator-bg.jpg`}}>
                 <div id="logo">
                     <h1>COVID-19 Risk Calculator</h1>
                 </div>

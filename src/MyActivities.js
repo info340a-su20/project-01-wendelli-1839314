@@ -19,9 +19,9 @@ export class MyActivities extends Component {
               <div className="row my-activity-row">
                 <div className="col-auto col-md-auto col-xl-auto d-flex">
                   <section className="flex3-item1-1">
-                    {chosenCards.map((card, index) => (
+                    {chosenCards.map((card) => (
                         <CardItemDetails
-                          key={index}
+                          key={card.number}
                           name={card.name}
                           number={card.number}
                           imageSrc={card.imageSrc}

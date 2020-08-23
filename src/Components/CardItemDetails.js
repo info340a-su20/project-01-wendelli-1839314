@@ -56,7 +56,7 @@ export class CardItemDetails extends Component {
             </div>
           </div>
           <div className="col-1 icon">
-            <img src={imageSrc} alt={imageAlt} className="activityIcon"></img>
+            <img src={`${process.env.PUBLIC_URL}${imageSrc}`} alt={imageAlt} className="activityIcon"></img>
           </div>
           <div className="col">
             <h3>{name}</h3>

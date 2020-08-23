@@ -11,10 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/*********************************************************************************/
-/* Media 375px                                                                   */
-/*********************************************************************************/
-@media (min-width: 375px) {
+
+  /*********************************************************************************/
+  /* Media 375px                                                                   */
+  /*********************************************************************************/
+  @media (min-width: 375px) {
     /*<-------------------------Element For all Page------------------------------>*/
 
     * {
@@ -95,8 +96,8 @@ code {
     }
 
     .flex-container {
+        margin: auto;
         width: 100%;
-        display: flex;
         flex-wrap: wrap;
         height: 100%;
         text-align: center;
@@ -164,9 +165,7 @@ code {
         position: relative;
         padding-bottom: 4em;
         padding-top: 4em;
-        background-image: url("/Calculator-bg.jpg");
-        background-position: bottom;
-        background-size: cover;
+        height: auto;
         text-align: center;
     }
 
@@ -216,9 +215,7 @@ code {
     .flex-item-1, .flex-item-2, #pg1 {
         align-content: center;
         width: 100%;
-        /* display: flex; */
         align-items: center;
-
     }
 
     .app-description {
@@ -405,7 +402,7 @@ code {
     /*<-------------------------My Activity------------------------------>*/
     .dropzone {
         background-color: lightgrey;
-        height: 562px;
+        height: auto;
         width: 100%;
         margin-bottom: 20px;
         margin-top: 10px;
@@ -795,7 +792,7 @@ code {
         margin-left: 0;
     }
 
-    .info {
+    .pg1-about, .info {
         justify-content: center;
         align-content: center;
     }
@@ -871,8 +868,12 @@ code {
 
     /*<------------------------------------Header------------------------------>*/
     #header {
-        padding-bottom: 3.8em;
-    }
+      position: relative;
+      padding-bottom: 3.8em;
+      padding-top: 4em;
+      height: auto;
+      text-align: center;
+  }
 
     /*<-------------------------Activity Center------------------------------>*/
     .form-inline {
@@ -984,6 +985,149 @@ code {
         font-size:10px !important;
     }
 
+    .lowRiskArrow {
+        width: 0;
+        height: 25;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        animation-duration: 2.5s;
+        animation-name: slideinLow;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slideinLow {
+        from {
+          margin-left: 0%;
+          margin-left:0;
+          width: 0;
+          border-bottom: 15px solid #63a64d;
+        }
+
+        to {
+          margin-right: 25%;
+          margin-left:10%;
+          width: 0;
+          border-bottom: 15px solid #63a64d;
+        }
+    }
+
+    .lowModerateRiskArrow {
+        width: 0;
+        height: 25;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        animation-duration: 2.5s;
+        animation-name: slideinlowM;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slideinlowM {
+        from {
+          margin-left: 0%;
+          margin-left:0;
+          width: 0;
+          border-bottom: 15px solid #63a64d;
+        }
+
+        to {
+          margin-right: 100%;
+          margin-left:28%;
+          width: 0;
+          border-bottom: 15px solid #ffc106;
+        }
+    }
+
+    .moderateRiskArrow {
+        width: 0;
+        height: 25;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        animation-duration: 2.5s;
+        animation-name: slideinMod;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slideinMod {
+        from {
+          margin-left: 0%;
+          margin-left:0;
+          width: 0;
+          border-bottom: 15px solid #63a64d;
+        }
+
+        to {
+          margin-right: 100%;
+          margin-left:49%;
+          width: 0;
+          border-bottom: 15px solid orange;
+        }
+    }
+    
+    .moderateHighRiskArrow {
+        width: 0;
+        height: 25;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        animation-duration: 2.5s;
+        animation-name: slideinModH;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slideinModH {
+        from {
+          margin-left: 0%;
+          width: 0;
+          border-bottom: 15px solid #63a64d;
+        }
+
+        to {
+          margin-right: 100%;
+          margin-left: 68%;
+          width: 0;
+          border-bottom: 15px solid #f56733;
+        }
+    }
+
+    .highRiskArrow {
+        width: 0;
+        height: 25;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        animation-duration: 2.5s;
+        animation-name: slideinH;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slideinH {
+        from {
+          margin-left: 0%;
+          width: 0;
+          border-bottom: 15px solid #63a64d;
+        }
+
+        to {
+          margin-right: 100%;
+          margin-left: 87.5%;
+          width: 0;
+          border-bottom: 15px solid #dc3546;
+        }
+    }
+
     /*<-------------------------About Page-------------------------------------->*/
     .flex-item-4 {
         padding-bottom: 0;
@@ -1029,13 +1173,14 @@ code {
         width: 45%;
     }
 
+    h3 {
+        margin-left: 1em;
+        font-size: 0.9em;
+    }
+
     p {
         font-size: 11pt;
         width: 100%;
-    }
-
-    h3 {
-        font-size:0.9em;
     }
 
     .row, .result {
@@ -1075,6 +1220,11 @@ code {
 
     .flex-activity-item{
         width: 90%;
+    }
+
+    .col-xl-6{
+        justify-content: center;
+        align-content: center;
     }
 
     /*<-------------------------My Activity------------------------------>*/
@@ -1155,7 +1305,6 @@ code {
         margin-left: 15px;
     }
 
-
     /*<-------------------------Result------------------------------>*/
     .progress-bar-container {
         margin-left: 50px;
@@ -1214,7 +1363,7 @@ code {
 
         to {
           margin-right: 25%;
-          margin-left:14.5%;
+          margin-left: 14%;
           width: 0;
           border-bottom: 15px solid #63a64d;
         }
@@ -1243,7 +1392,7 @@ code {
 
         to {
           margin-right: 100%;
-          margin-left:32%;
+          margin-left:31%;
           width: 0;
           border-bottom: 15px solid #ffc106;
         }
@@ -1333,7 +1482,9 @@ code {
           border-bottom: 15px solid #dc3546;
         }
     }
+
     /*<-------------------------About Page-------------------------------------->*/
+    
     .flex-item-4 {
         padding: 0;
     }

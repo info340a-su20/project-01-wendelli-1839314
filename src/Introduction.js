@@ -4,7 +4,7 @@ const introduction = () => {
     return (
         <div className="row">
             <div className="flex-item-1 col-auto col-md-auto col-xl d-flex">
-            <img src="people.png" alt="people" id="people"></img>
+            <img src={`${process.env.PUBLIC_URL}/people.png`} alt="people" id="people"></img>
             </div>
             <div className="flex-item-2 col-auto col-md-auto col-xl d-flex">
                 <p className="app-description">

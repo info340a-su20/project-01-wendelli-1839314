@@ -5,13 +5,13 @@ class AboutUs extends Component {
     render() {
         return (
             <div id="wrapper">
-                <div className="flex-container" id="pg1-about">
+                <div className="flex-container pg1-about">
                     <div className="row info">
                         <div className="col-20 col-md-20 col-xl-auto d-flex">
                             <section className="flex-item-4">
                                 <img
                                     className="rounded-circle profile"
-                                    src="wendell.jpg"
+                                    src={`${process.env.PUBLIC_URL}/wendell.jpg`}
                                     alt="people"
                                 />
                                 <h2 className="name">Wendell Li</h2>
@@ -23,7 +23,7 @@ class AboutUs extends Component {
                                     aria-label="LinkedIn"
                                     ><img
                                     alt="LinkedIn"
-                                    src="icons/linkedin.jpg"
+                                    src={`${process.env.PUBLIC_URL}/icons/linkedin.jpg`}
                                     className="contact"
                                 /></a>
                                 <a
@@ -34,7 +34,7 @@ class AboutUs extends Component {
                                     aria-label="Facebook"
                                     ><img
                                     alt="Facebook"
-                                    src="icons/facebook.jpg"
+                                    src={`${process.env.PUBLIC_URL}/icons/facebook.jpg`}
                                     className="contact"
                                 /></a>
                                 <a
@@ -45,7 +45,7 @@ class AboutUs extends Component {
                                     aria-label="E-mail"
                                     ><img
                                     alt="E-mail"
-                                    src="icons/email.jpg"
+                                    src={`${process.env.PUBLIC_URL}/icons/email.jpg`}
                                     className="contact"
                                 /></a>
                                 <ul className="list">
@@ -60,7 +60,7 @@ class AboutUs extends Component {
                             <section className="flex-item-5">
                                 <img
                                     className="rounded-circle profile"
-                                    src="george.jpeg"
+                                    src={`${process.env.PUBLIC_URL}/george.jpeg`}
                                     alt="people"
                                 />
                                 <h2 className="name">George Gu</h2>
@@ -72,7 +72,7 @@ class AboutUs extends Component {
                                     aria-label="LinkedIn"
                                     ><img
                                     alt="LinkedIn"
-                                    src="icons/linkedin.jpg"
+                                    src={`${process.env.PUBLIC_URL}/icons/linkedin.jpg`}
                                     className="contact"
                                 /></a>
                                 <a
@@ -83,7 +83,7 @@ class AboutUs extends Component {
                                     aria-label="Facebook"
                                     ><img
                                     alt="Facebook"
-                                    src="icons/facebook.jpg"
+                                    src={`${process.env.PUBLIC_URL}/icons/facebook.jpg`}
                                     className="contact"
                                 /></a>
                                 <a
@@ -94,7 +94,7 @@ class AboutUs extends Component {
                                     aria-label="E-mail"
                                     ><img
                                     alt="E-mail"
-                                    src="icons/email.jpg"
+                                    src={`${process.env.PUBLIC_URL}/icons/email.jpg`}
                                     className="contact"
                                 /></a>
                                 <ul className="list">
@@ -109,7 +109,7 @@ class AboutUs extends Component {
                             <section className="flex-item-6">
                                 <img
                                     className="rounded-circle profile"
-                                    src="celia.jpg"
+                                    src={`${process.env.PUBLIC_URL}/celia.jpg`}
                                     alt="people"
                                 />
                                 <h2 className="name">Zexin Lyu</h2>
@@ -121,7 +121,7 @@ class AboutUs extends Component {
                                     aria-label="LinkedIn"
                                     ><img
                                     alt="LinkedIn"
-                                    src="icons/linkedin.jpg"
+                                    src={`${process.env.PUBLIC_URL}/icons/linkedin.jpg`}
                                     className="contact"
                                 /></a>
                                 <a
@@ -132,7 +132,7 @@ class AboutUs extends Component {
                                     aria-label="Facebook"
                                     ><img
                                     alt="Facebook"
-                                    src="icons/facebook.jpg"
+                                    src={`${process.env.PUBLIC_URL}/icons/facebook.jpg`}
                                     className="contact"
                                 /></a>
                                 <a
@@ -143,7 +143,7 @@ class AboutUs extends Component {
                                     aria-label="E-mail"
                                     ><img
                                     alt="E-mail"
-                                    src="icons/email.jpg"
+                                    src={`${process.env.PUBLIC_URL}/icons/email.jpg`}
                                     className="contact"
                                 /></a>
                                 <ul className="list">

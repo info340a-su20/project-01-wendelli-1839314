@@ -114,7 +114,7 @@ export const cardListLeft = [
   {
     category: "entertainment",
     name: "Golf",
-    imageSrc: "icons/golf.png",
+    imageSrc: "/icons/golf.png",
     imageAlt: "golf",
     number: 16,
   },
@@ -149,7 +149,7 @@ export const cardListLeft = [
   {
     category: "miscellaneous",
     name: "Restaurant Dine-in",
-    imageSrc: "icons/waiter.png",
+    imageSrc: "/icons/waiter.png",
     imageAlt: "waiter",
     number: 21,
   },
@@ -264,7 +264,7 @@ export const cardListRight = [
   {
     category: "entertainment",
     name: "Tennis",
-    imageSrc: "icons/tennis.png",
+    imageSrc: "/icons/tennis.png",
     imageAlt: "tennis",
     number: 37,
   },
@@ -299,7 +299,7 @@ export const cardListRight = [
   {
     category: "miscellaneous",
     name: "Shaking Hands",
-    imageSrc: "icons/handshake.png",
+    imageSrc: "/icons/handshake.png",
     imageAlt: "handshake",
     number: 42,
   },

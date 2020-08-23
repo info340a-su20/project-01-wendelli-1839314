@@ -22,13 +22,10 @@ class ActivitiesSection extends Component {
   };
 
   removeFromMyActivities = (newCard) => {
-    console.log("deleting", newCard);
     this.setState({
-      cardsInMyActivities: [
-        ...this.state.cardsInMyActivities.filter(
+      cardsInMyActivities: this.state.cardsInMyActivities.filter(
           (card) => card.number !== newCard.number
-        ),
-      ],
+      )
     });
   };
 
@@ -66,13 +63,13 @@ class ActivitiesSection extends Component {
       // let levelNum = Math.floor(levelIndex / cardsInMyActivities.length / 10) ? why if else
       let levelNum = Math.floor(levelIndex / cardsInMyActivities.length)
       console.log(levelNum);
-      if (levelNum > 40) {
+      if (levelNum > 30) {
         levelNum = 4;
-      } else if (levelNum > 30) {
+      } else if (levelNum > 21) {
         levelNum = 3;
-      } else if (levelNum > 20) {
+      } else if (levelNum > 14) {
         levelNum = 2;
-      } else if (levelNum > 10) {
+      } else if (levelNum > 7) {
         levelNum = 1;
       } else {
         levelNum = 0;
